@@ -67,4 +67,4 @@ pathsToRemove.map(path => {
   });
 });
 
-console.log(chalk.bgGreen('Demo app has been removed.'));
+console.log(chalk.bgGreen('Demo app has been successfully removed.'));

@@ -12,12 +12,12 @@ const MainPage = () => (
           <h2 className={styles['secondary-header']}>Getting started!</h2>
           <p>Just follow a few easy steps to set up demo project:</p>
           <ol className={styles.list}>
-            <li><a className={styles['text-link']} href="https://nodejs.org/download/release/v5.9.1/">Install Node</a>, preferably <b>5.9.1</b> (lastest stable version for Windows and Azure cloud platform, for Mac OS X be free to get more recent version)</li>
-            <li>Install <b>Git</b></li>
+            <li><a className={styles['text-link']} href="https://nodejs.org/download/release/v5.9.1/">Install Node</a>, preferably <b>5.9.1</b> (lastest stable version for Windows and Azure cloud platform, for Mac OS X be free to get more recent version).</li>
+            <li>Install <b>Git</b>.</li>
             <li>Clone the repository <code>git clone https://github.com/blurbyte/react-quickstart.git</code></li>
             <li>Install <em>React Developer Tools</em> &ndash; provides insight about virtual DOM and components props.</li>
             <li>Install <em>Redux DevTools</em> &ndash; lets you inspect application state.</li>
-            <li>Enter aplication folder and install all required modules <code>npm install</code>.</li>
+            <li>Enter project folder and install all required modules <code>npm install</code>.</li>
             <li>Start demo Redux aplication <code>npm start -s</code>. It will build a project, start webserver up and open app in your browser. It also automaticly lint code and run tests each time you save. Webpack serves all files from memory, no physical files are created.</li>
             <li>Take some time and review <em>example counter</em> application code. All project files are placed under <b>/src</b> folder.</li>
             <li>Build final project <code>npm run build</code>. Bundled application will be found in <b>/dist</b> directory. Files are created on disk.</li>
@@ -217,8 +217,8 @@ const MainPage = () => (
       </div>
       <div className={styles['secondary-content']}>
         <section className={styles['content-section']}>
-          <h2 className={styles['secondary-header']}>What can you learn?</h2>
-          <p>By inspecting source code of example counter application you can get a good grasp of:</p>
+          <h2 className={styles['secondary-header']}>What will you learn?</h2>
+          <p>By inspecting source code of demo counter application you can get a good grasp of:</p>
           <ul className={styles.list}>
             <li>How to set up JavaScript development environment for single page React web app</li>
             <li>How to organize file structure of your project</li>
