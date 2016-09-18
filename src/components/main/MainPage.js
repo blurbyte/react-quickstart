@@ -239,7 +239,7 @@ const MainPage = () => (
           <h2 className={styles['secondary-header']}>Check it out!</h2>
           <ul className={styles['links-list']}>
             <li>Check my other projects on <a className={styles['text-link']} href="https://github.com/blurbyte">Github</a></li>
-            <li>Contact me on <a className={styles['text-link']} href="https://twitter.com/">Twitter</a></li>
+            <li>Contact me on <a className={styles['text-link']} href="https://twitter.com/blurbyte">Twitter</a></li>
             <li>Visit <a className={styles['text-link']} href="http://blurbyte.com/">blurbyte.com</a></li>
           </ul>
         </section>
