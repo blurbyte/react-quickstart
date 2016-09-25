@@ -9,7 +9,7 @@ const GLOBALS = {
 
 export default {
   debug: true,
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'eval-source-map',
   noInfo: true,
   entry: [
     './src/webpack-public-path',
