@@ -12,7 +12,7 @@
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
-    "test": "mocha --reporter spec tools/testSetup.js \"src/**/*.test.js\"",
+    "test": "mocha --reporter spec tools/testSetup.js \"./{,!(node_modules)/**/}*.test.js\"",
     "test:watch": "npm run test -- --watch",
     "clean-dist": "npm run remove-dist && mkdir dist",
     "remove-dist": "rimraf ./dist",
