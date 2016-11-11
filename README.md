@@ -1,5 +1,6 @@
 # Welcome to React Quickstart
 [![Build Status](https://travis-ci.org/blurbyte/react-quickstart.svg?branch=master)](https://travis-ci.org/blurbyte/react-quickstart)
+
 React Quickstart is starting kit for creating fast and responsive web applications with React. It takes care of initial developement environment setup, boilerplating and puts everything to use in simple example. Notable technologies used are: __React__, __Redux__, __React Router__, __Babel__, __Webpack__, __ESLint__.
 
 ###Getting started!
