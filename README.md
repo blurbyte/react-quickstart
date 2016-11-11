@@ -1,13 +1,15 @@
 # Welcome to React Quickstart
+[![Build Status](https://travis-ci.org/blurbyte/react-quickstart.svg?branch=master)](https://travis-ci.org/blurbyte/react-quickstart)
 React Quickstart is starting kit for creating fast and responsive web applications with React. It takes care of initial developement environment setup, boilerplating and puts everything to use in simple example. Notable technologies used are: __React__, __Redux__, __React Router__, __Babel__, __Webpack__, __ESLint__.
 
 ###Getting started!
 Just follow a few easy steps to set project up:
-  1. [Install Node](https://nodejs.org/download/release/v5.9.1/), preferably __5.9.1__ (lastest stable version for Windows and Azure cloud platform, for Mac OS X be free to get more recent version)
+  1. Install __Node__, preferably __6.9.1__
   2. Install __Git__
   3. Clone the repository `git clone https://github.com/blurbyte/react-quickstart.git`
-  4. Enter project folder and install all required modules `npm install`
-  5. Start demo aplication `npm start -s` and follow further instructions 🙂
+  4. Install [Yarn](https://yarnpkg.com/) - installing modules super fast (20 seconds instead of 3 minutes with `npm install`)
+  5. Enter project folder and install all required modules with simple `yarn` command
+  6. Start demo aplication `npm start -s` and follow further instructions 🙂
 
 ###What will you learn?
 By inspecting source code of demo application you can get a good grasp of:
