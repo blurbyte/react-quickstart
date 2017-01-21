@@ -12,13 +12,22 @@ import routes from './routes';
 import configureStore from './store/configureStore';
 
 //es6 promises polyfill
-require('es6-promise').polyfill();
+import Promise from 'promise-polyfill';
+
+if (!window.Promise) {
+  window.Promise = Promise;
+}
+
+//polyfill for fetch requests from server (for example RESTful api), modern equivalent of XMLHttpRequest
+//not required for static content
+import 'whatwg-fetch';
 
 //load favicon
-require('./favicon.ico');
+import './favicon.ico';
 
 //import styles
 import './styles/styles.css';
+
 
 //in browser console use $r.store.getState() when Provider selected in ReactDevTools
 

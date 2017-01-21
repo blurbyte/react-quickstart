@@ -1,11 +1,6 @@
 import * as types from './actionTypes';
 import {fetchRequestError} from './fetchRequestsActions';
 
-//polyfill for fetch requests from server (for example RESTful api), modern equivalent of XMLHttpRequest
-//not required for static content
-import 'whatwg-fetch';
-
-
 //dummy actions to show how to handle fetch requests
 export const loadDataSuccess = (data) => (
   { type: types.LOAD_DATA_SUCCESS, data }

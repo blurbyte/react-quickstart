@@ -53,7 +53,7 @@ const MainPage = () => (
                 <td>Simple declarative router for React apps</td>
               </tr>
               <tr>
-                <td><strong>whatwg-fetch</strong>, es6-promise</td>
+                <td><strong>whatwg-fetch</strong>, promise-polyfill</td>
                 <td>Fetch (modern replacement for XMLHttpRequest) polyfill</td>
               </tr>
               <tr>
