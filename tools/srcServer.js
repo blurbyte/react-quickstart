@@ -1,40 +1,41 @@
-/* eslint-disable no-console */
-//simple express development server
-
-import express from 'express';
+import browserSync from 'browser-sync';
+import historyApiFallback from 'connect-history-api-fallback';
 import webpack from 'webpack';
-import path from 'path';
+import webpackDevMiddleware from 'webpack-dev-middleware';
+import webpackHotMiddleware from 'webpack-hot-middleware';
 import config from '../webpack.config.dev';
-import open from 'open';
 
-const port = 3000;
-const app = express();
-const compiler = webpack(config);
+const bundler = webpack(config);
 
-app.use(require('webpack-dev-middleware')(compiler, {
-  noInfo: true,
-  publicPath: config.output.publicPath
-}));
-
-app.use(require('webpack-hot-middleware')(compiler));
-
-//handles redirect, since index.html is not physically present on disk
-app.use('*', function (req, res, next) {
-  const filename = path.join(compiler.outputPath, 'index.html');
-  compiler.outputFileSystem.readFile(filename, function (err, result) {
-    if (err) {
-      return next(err);
-    }
-    res.set('content-type', 'text/html');
-    res.send(result);
-    res.end();
-  });
-});
-
-app.listen(port, function (err) {
-  if (err) {
-    console.log(err);
-  } else {
-    open(`http://localhost:${port}`);
-  }
+//BrowserSync dev server
+browserSync({
+  port: 3000,
+  ui: {
+    port: 3001
+  },
+  server: {
+    baseDir: 'src',
+    middleware: [
+      historyApiFallback(),
+      webpackDevMiddleware(bundler, {
+        publicPath: config.output.publicPath,
+        noInfo: false,
+        quiet: false,
+        stats: {
+          assets: false,
+          colors: true,
+          version: false,
+          hash: false,
+          timings: false,
+          chunks: false,
+          chunkModules: false
+        }
+      }),
+      webpackHotMiddleware(bundler)
+    ]
+  },
+  files: [
+    'src/*.html'
+  ],
+  notify: false
 });
