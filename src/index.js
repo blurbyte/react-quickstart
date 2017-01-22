@@ -18,10 +18,6 @@ if (!window.Promise) {
   window.Promise = Promise;
 }
 
-//polyfill for fetch requests from server (for example RESTful api), modern equivalent of XMLHttpRequest
-//not required for static content
-import 'whatwg-fetch';
-
 //load favicon
 import './favicon.ico';
 

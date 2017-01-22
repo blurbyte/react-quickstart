@@ -5,7 +5,7 @@ React Quickstart is starting kit for creating fast and responsive web applicatio
 
 ###Getting started!
 Just follow a few easy steps to set project up:
-  1. Install __Node__, preferably __6.9.1__
+  1. Install __Node__, preferably > __6.9.1__
   2. Install __Git__
   3. Clone the repository `git clone https://github.com/blurbyte/react-quickstart.git`
   4. Install [Yarn](https://yarnpkg.com/) - installing modules super fast (20 seconds instead of 3 minutes with `npm install`)

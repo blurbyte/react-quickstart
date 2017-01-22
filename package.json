@@ -81,7 +81,7 @@
     "rimraf": "2.5.4",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
-    "webpack": "1.13.2",
+    "webpack": "1.14.0",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.12.2",
     "webpack-md5-hash": "0.0.5"

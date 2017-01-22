@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import autoprefixer from 'autoprefixer';
+import path from 'path';
 
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('development'),
@@ -15,11 +16,11 @@ export default {
     './src/webpack-public-path',
     'webpack-hot-middleware/client?reload=true',
     'whatwg-fetch',
-    './src/index'
+    path.resolve(__dirname, 'src/index')
   ],
   target: 'web',
   output: {
-    path: __dirname + '/src',
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     filename: 'bundle.js'
   },

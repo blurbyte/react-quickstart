@@ -3,6 +3,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import WebpackMd5Hash from 'webpack-md5-hash';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import autoprefixer from 'autoprefixer';
+import path from 'path';
 
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('production'),
@@ -12,22 +13,25 @@ const GLOBALS = {
 export default {
   debug: true,
   devtool: 'source-map',
-  noInfo: true,
-  entry: [
-    'whatwg-fetch',
-    './src/index'
-  ],
+  noInfo: false,
+  entry: {
+    vendor: path.resolve(__dirname, 'src/vendor'),
+    main: path.resolve(__dirname, 'src/index')
+  },
   target: 'web',
   output: {
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: 'bundle-[chunkhash].js'
+    filename: '[name].[chunkhash].js'
   },
   plugins: [
     new WebpackMd5Hash(),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor'
+    }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin(GLOBALS),
-    new ExtractTextPlugin('styles-[contenthash].css', {
+    new ExtractTextPlugin('styles.[contenthash].css', {
       allChunks: true
     }),
     new HtmlWebpackPlugin({

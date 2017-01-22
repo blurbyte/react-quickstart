@@ -12,7 +12,7 @@ const MainPage = () => (
           <h2 className={styles['secondary-header']}>Getting started!</h2>
           <p>Just follow a few easy steps to set up demo project:</p>
           <ol className={styles.list}>
-            <li>Install <b>Node</b>, preferably <b>6.9.1</b>.</li>
+            <li>Install <b>Node</b>, preferably > <b>6.9.1</b>.</li>
             <li>Install <b>Git</b>.</li>
             <li>Clone the repository <code>git clone https://github.com/blurbyte/react-quickstart.git</code></li>
             <li>Install <em>React Developer Tools</em> &ndash; provides insight about virtual DOM and components props.</li>
