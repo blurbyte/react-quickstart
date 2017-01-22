@@ -1,4 +1,4 @@
-@import './normalize.css';
+@import './sanitize.css';
 
 /*GLOBAL STYLES available for all components*/
 
@@ -20,11 +20,6 @@ html {
 	font-size: 10px;
 	font-family: sans-serif;
   box-sizing: border-box;
-}
-
-/*makes using flexbox more consistent and simpler*/
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 
 body {
