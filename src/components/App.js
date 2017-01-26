@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
+import Helmet from 'react-helmet';
 
 //components
 import Header from './header/Header';
@@ -8,6 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <Helmet titleTemplate="%s | React Quickstart" defaultTitle="React Quickstart" meta={[{ name: 'description', content: 'React starter kit for single page web applications development.' }]} />
         <Header />
         {this.props.children}
       </div>
