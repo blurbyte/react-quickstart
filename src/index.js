@@ -21,7 +21,8 @@ if (!window.Promise) {
 //load favicon
 import './favicon.ico';
 
-//import styles
+//import styles reset and styles
+import 'sanitize.css/sanitize.css';
 import './styles/styles.css';
 
 
