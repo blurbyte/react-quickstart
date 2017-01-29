@@ -3,6 +3,9 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
+//styles reset
+import 'sanitize.css/sanitize.css';
+
 //router
 import { Router, browserHistory, applyRouterMiddleware } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
@@ -22,10 +25,8 @@ if (!window.Promise) {
 //load favicon
 import './favicon.ico';
 
-//import styles reset and styles
-import 'sanitize.css/sanitize.css';
-import './styles/styles.css';
-
+//custom global styles
+import './styles/globalStyles';
 
 //in browser console use $r.store.getState() when Provider selected in ReactDevTools
 

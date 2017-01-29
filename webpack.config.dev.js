@@ -1,6 +1,5 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import autoprefixer from 'autoprefixer';
 import path from 'path';
 
 const GLOBALS = {
@@ -15,7 +14,6 @@ export default {
   entry: [
     './src/webpack-public-path',
     'webpack-hot-middleware/client?reload=true',
-    'whatwg-fetch',
     path.resolve(__dirname, 'src/index')
   ],
   target: 'web',
@@ -26,6 +24,9 @@ export default {
   },
   plugins: [
     new webpack.DefinePlugin(GLOBALS),
+    new webpack.ProvidePlugin({
+      fetch: 'exports-loader?self.fetch!whatwg-fetch',
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new HtmlWebpackPlugin({
@@ -43,8 +44,7 @@ export default {
       { test: /\.(jpe?g|png|gif)$/i, loader: 'file?name=assets/[name].[ext]' },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url?limit=10000&mimetype=application/font-woff&name=assets/[name].[ext]' },
       { test: /\.ico$/, loader: 'file?name=[name].[ext]' },
-      { test: /(\.css)$/, loaders: ['style?sourceMap', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss'] }
+      { test: /(\.css)$/, loaders: ['style-loader', 'css-loader'] }
     ]
-  },
-  postcss: () => [autoprefixer]
+  }
 };

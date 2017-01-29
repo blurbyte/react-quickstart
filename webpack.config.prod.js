@@ -1,8 +1,6 @@
 import webpack from 'webpack';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import WebpackMd5Hash from 'webpack-md5-hash';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import autoprefixer from 'autoprefixer';
 import path from 'path';
 
 const GLOBALS = {
@@ -25,15 +23,15 @@ export default {
     filename: '[name].[chunkhash].js'
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      fetch: 'exports-loader?self.fetch!whatwg-fetch',
+    }),
     new WebpackMd5Hash(),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor'
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin(GLOBALS),
-    new ExtractTextPlugin('styles.[contenthash].css', {
-      allChunks: true
-    }),
     new HtmlWebpackPlugin({
       template: 'src/index.ejs',
       minify: {
@@ -57,8 +55,7 @@ export default {
       { test: /\.(jpe?g|png|gif)$/i, loader: 'file?name=assets/[name].[ext]' },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url?limit=10000&mimetype=application/font-woff&name=assets/[name].[ext]' },
       { test: /\.ico$/, loader: 'file?name=[name].[ext]' },
-      { test: /(\.css)$/, loader: ExtractTextPlugin.extract('css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss') }
+      { test: /(\.css)$/, loaders: ['style-loader', 'css-loader'] }
     ]
-  },
-  postcss: () => [autoprefixer]
+  }
 };

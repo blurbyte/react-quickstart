@@ -1,16 +1,16 @@
 import React from 'react';
-import {Route, IndexRoute} from 'react-router';
+import { Route, IndexRoute } from 'react-router';
 
 //import components
-import App from './components/App';
-import MainPage from './components/main/MainPage';
-import CounterPage from './components/counter/CounterPage';
-import NotFoundPage from './components/common/NotFoundPage';
+import App from './containers/App';
+import HomePage from './containers/HomePage';
+import ManageCounterPage from './containers/ManageCounterPage';
+import NotFoundPage from './containers/NotFoundPage';
 
 export default (
   <Route path="/" component={App}>
-    <IndexRoute component={MainPage} />
-    <Route path="/counter" component={CounterPage} />
+    <IndexRoute component={HomePage} />
+    <Route path="/counter" component={ManageCounterPage} />
     <Route path="*" component={NotFoundPage} />
   </Route>
 );
