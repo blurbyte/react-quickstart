@@ -74,7 +74,7 @@ class MainPage extends React.Component {
                   </tr>
                   <tr>
                     <td><strong>react-helmet</strong></td>
-                    <td>Document head management &ndash; change title and meta tags</td>
+                    <td>Document head management &ndash; change title and meta tags of the page</td>
                   </tr>
                   <tr>
                     <td><strong>whatwg-fetch</strong>, promise-polyfill</td>
@@ -82,7 +82,7 @@ class MainPage extends React.Component {
                   </tr>
                   <tr>
                     <td><strong>babel-cli</strong>, <strong>babel-core</strong>, babel-loader and other babel modules</td>
-                    <td>Take advantage of the newest JavaScript features, transpiles ES6 to ES5</td>
+                    <td>Take advantage of the newest JavaScript features, transpiles ES2015+ to ES5</td>
                   </tr>
                   <tr>
                     <td><strong>eslint</strong>, eslint-watch and eslint plugins</td>
@@ -90,15 +90,19 @@ class MainPage extends React.Component {
                   </tr>
                   <tr>
                     <td><strong>webpack</strong>, webpack-dev-middleware, webpack-hot-middleware and all <em>loaders</em></td>
-                    <td>Bundles all modules into single file, enables React hot reloading &ndash; tweaking components in real time and css modules &ndash; locally scoped css</td>
+                    <td>Bundles all modules into single file, enables React hot reloading &ndash; tweaking components in real time</td>
                   </tr>
                   <tr>
                     <td><strong>html-webpack-plugin</strong>, webpack-md5-hash</td>
                     <td>Creates custom html files for cache busting</td>
                   </tr>
                   <tr>
-                    <td><strong>extract-text-webpack-plugin</strong></td>
-                    <td>Extracts whole CSS to separate file</td>
+                    <td><strong>styled-components</strong></td>
+                    <td>Write localized components styles in JavaScript</td>
+                  </tr>
+                  <tr>
+                    <td><strong>sanitize.css</strong></td>
+                    <td>Modern css reset stylesheet</td>
                   </tr>
                   <tr>
                     <td><strong>express</strong>, compression</td>
@@ -111,10 +115,6 @@ class MainPage extends React.Component {
                   <tr>
                     <td><strong>chai</strong></td>
                     <td>BDD assertion library for Mocha</td>
-                  </tr>
-                  <tr>
-                    <td><strong>sanitize.css</strong></td>
-                    <td>Modern css reset stylesheet</td>
                   </tr>
                   <tr>
                     <td><strong>chalk</strong></td>
@@ -147,7 +147,7 @@ class MainPage extends React.Component {
                 <dd>saves exact version of the module</dd>
               </dl>
               <dl>
-                <dt>.eslintrc</dt>
+                <dt>.eslintrc.json</dt>
                 <dd>ESLint configuration file</dd>
                 <dd>list of installed ESLint plugins and rules</dd>
               </dl>
@@ -171,7 +171,6 @@ class MainPage extends React.Component {
               <dl>
                 <dt>webpack.config.prod.js</dt>
                 <dd>webpack configuration file for production</dd>
-                <dd>extracts CSS to separate file</dd>
                 <dd>cache busting with hashed names for bundled files</dd>
               </dl>
               <dl>
@@ -230,9 +229,13 @@ class MainPage extends React.Component {
               </dl>
               <dl>
                 <dt><b>src</b>/<b>components</b></dt>
-                <dd>React components</dd>
-                <dd>components grouped logically in folders</dd>
-                <dd>tests and CSS for each component in the same location</dd>
+                <dd>React presentational components</dd>
+                <dd>tests and styles for each component in the same location</dd>
+              </dl>
+              <dl>
+                <dt><b>src</b>/<b>containers</b></dt>
+                <dd>React container components</dd>
+                <dd>application's logic and root page views</dd>
               </dl>
               <dl>
                 <dt><b>src</b>/<b>components</b>/App.js</dt>
