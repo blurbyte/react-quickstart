@@ -9,9 +9,7 @@ const GLOBALS = {
 };
 
 export default {
-  debug: true,
   devtool: 'source-map',
-  noInfo: false,
   entry: {
     vendor: path.resolve(__dirname, 'src/vendor'),
     main: path.resolve(__dirname, 'src/index')
@@ -30,7 +28,6 @@ export default {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor'
     }),
-    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin(GLOBALS),
     new HtmlWebpackPlugin({
       template: 'src/index.ejs',
@@ -46,16 +43,21 @@ export default {
       },
       inject: true
     }),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    })
   ],
   module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel' },
-      { test: /\.(jpe?g|png|gif)$/i, loader: 'file?name=assets/[name].[ext]' },
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url?limit=10000&mimetype=application/font-woff&name=assets/[name].[ext]' },
-      { test: /\.ico$/, loader: 'file?name=[name].[ext]' },
-      { test: /(\.css)$/, loaders: ['style-loader', 'css-loader'] }
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+      { test: /\.(jpe?g|png|gif)$/i, loader: 'file-loader', options: { name: 'assets/[name].[ext]' } },
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader', options: { limit: 10000, mimetype: 'application/font-woff', name: 'assets/[name].[ext]' } },
+      { test: /\.ico$/, loader: 'file-loader', options: { name: '[name].[ext]' } },
+      { test: /(\.css)$/, use: ['style-loader', 'css-loader'] }
     ]
   }
 };

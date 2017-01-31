@@ -8,9 +8,7 @@ const GLOBALS = {
 };
 
 export default {
-  debug: true,
-  devtool: 'eval-source-map',
-  noInfo: true,
+  devtool: 'cheap-module-eval-source-map',
   entry: [
     './src/webpack-public-path',
     'webpack-hot-middleware/client?reload=true',
@@ -28,7 +26,7 @@ export default {
       fetch: 'exports-loader?self.fetch!whatwg-fetch',
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
       template: 'src/index.ejs',
       minify: {
@@ -39,12 +37,12 @@ export default {
     })
   ],
   module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel' },
-      { test: /\.(jpe?g|png|gif)$/i, loader: 'file?name=assets/[name].[ext]' },
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url?limit=10000&mimetype=application/font-woff&name=assets/[name].[ext]' },
-      { test: /\.ico$/, loader: 'file?name=[name].[ext]' },
-      { test: /(\.css)$/, loaders: ['style-loader', 'css-loader'] }
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+      { test: /\.(jpe?g|png|gif)$/i, loader: 'file-loader', options: { name: 'assets/[name].[ext]' } },
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader', options: { limit: 10000, mimetype: 'application/font-woff', name: 'assets/[name].[ext]' } },
+      { test: /\.ico$/, loader: 'file-loader', options: { name: '[name].[ext]' } },
+      { test: /(\.css)$/, use: ['style-loader', 'css-loader'] }
     ]
   }
 };
