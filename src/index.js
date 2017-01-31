@@ -13,7 +13,7 @@ import { useScroll } from 'react-router-scroll';
 import routes from './routes';
 
 //redux store
-import configureStore from './store/configureStore';
+import configureStore from './store';
 
 //es6 promises polyfill
 import Promise from 'promise-polyfill';
@@ -33,7 +33,8 @@ import './styles/globalStyles';
 //store first parameter is default state
 //for example you can provide default starting value for counter:
 //const store = configureStore({ counter: 10 });
-const store = configureStore();
+const initialState = {};
+const store = configureStore(initialState);
 const history = syncHistoryWithStore(browserHistory, store);
 
 render(
