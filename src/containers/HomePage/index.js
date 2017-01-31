@@ -192,7 +192,7 @@ class MainPage extends React.Component {
               </dl>
               <dl>
                 <dt><b>src</b>/<b>styles</b></dt>
-                <dd>global CSS styles</dd>
+                <dd>global CSS styles and media queries setup</dd>
               </dl>
               <dl>
                 <dt><b>src</b>/<b>fonts</b></dt>
@@ -208,7 +208,7 @@ class MainPage extends React.Component {
                 <dd>list of all available action types</dd>
               </dl>
               <dl>
-                <dt><b>src</b>/<b>store</b></dt>
+                <dt><b>src</b>/store.js</dt>
                 <dd>Redux store configuration</dd>
                 <dd>different middleware configurations for production and development</dd>
                 <dd>ReduxDevTools setup</dd>
@@ -238,7 +238,7 @@ class MainPage extends React.Component {
                 <dd>application's logic and root page views</dd>
               </dl>
               <dl>
-                <dt><b>src</b>/<b>components</b>/App.js</dt>
+                <dt><b>src</b>/<b>containers</b>/<b>App</b></dt>
                 <dd>React application root/wrapper component</dd>
               </dl>
             </Section>
