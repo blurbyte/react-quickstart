@@ -109,12 +109,8 @@ class MainPage extends React.Component {
                     <td>Sets up Node.js development and production webservers</td>
                   </tr>
                   <tr>
-                    <td><strong>mocha</strong></td>
+                    <td><strong>jest</strong></td>
                     <td>Automated tests framework</td>
-                  </tr>
-                  <tr>
-                    <td><strong>chai</strong></td>
-                    <td>BDD assertion library for Mocha</td>
                   </tr>
                   <tr>
                     <td><strong>chalk</strong></td>
