@@ -1,4 +1,3 @@
-import {expect} from 'chai';
 import * as actions from '../actions/counterActions';
 import counterReducer from './counterReducer';
 
@@ -16,7 +15,7 @@ describe('Counter reducer', () => {
     Object.freeze(action);
 
     //assert
-    expect(counterReducer(stateBefore, action)).to.deep.equal(stateAfter);
+    expect(counterReducer(stateBefore, action)).toEqual(stateAfter);
   });
   it('should return decremented value', () => {
     //arrange
@@ -30,6 +29,6 @@ describe('Counter reducer', () => {
     Object.freeze(action);
 
     //assert
-    expect(counterReducer(stateBefore, action)).to.deep.equal(stateAfter);
+    expect(counterReducer(stateBefore, action)).toEqual(stateAfter);
   });
 });

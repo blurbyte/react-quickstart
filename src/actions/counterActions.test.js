@@ -1,4 +1,3 @@
-import {expect} from 'chai';
 import * as actions from './counterActions';
 import * as types from './actionTypes';
 
@@ -17,7 +16,7 @@ describe('Counter actions', () => {
       const action = actions.increaseCounter(amount);
 
       //assert
-      expect(action).to.deep.equal(expectedAction);
+      expect(action).toEqual(expectedAction);
     });
   });
   describe('decrementCounter', () => {
@@ -33,7 +32,7 @@ describe('Counter actions', () => {
       const action = actions.decreaseCounter(amount);
 
       //assert
-      expect(action).to.deep.equal(expectedAction);
+      expect(action).toEqual(expectedAction);
     });
   });
 });
