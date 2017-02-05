@@ -6,11 +6,13 @@ import chalk from 'chalk';
 const pathsToRemove = [
   './src/actions/*',
   './src/components/*',
+  './src/containers/*',
   './src/reducers/*',
   './src/fonts',
-  './src/styles/styles.css',
+  './src/styles/globalStyles.js',
   './src/routes.js',
-  './src/index.ejs'
+  './src/index.ejs',
+  './tools/removeDemo.js'
 ];
 
 const filesToCreate = [
@@ -20,7 +22,7 @@ const filesToCreate = [
   },
   {
     path: './src/routes.js',
-    content: '//Application routes declarations\nimport React from \'react\';\nimport {Route} from \'react-router\';\n\nimport App from \'./components/App\';\n\nexport default (\n  <Route path="/" component={App}>\n  </Route>\n);'
+    content: '//Application routes declarations\nimport React from \'react\';\nimport { Route } from \'react-router\';\n\nimport App from \'./containers/App\';\n\nexport default (\n  <Route path="/" component={App}>\n  </Route>\n);'
   },
   {
     path: './src/reducers/initialState.js',
@@ -28,18 +30,18 @@ const filesToCreate = [
   },
   {
     path: './src/reducers/index.js',
-    content: '//Root reducer setup\nimport {combineReducers} from \'redux\';\nimport {routerReducer} from \'react-router-redux\';\n\nconst rootReducer = combineReducers({ routing: routerReducer });\n\nexport default rootReducer;'
+    content: '//Root reducer setup\nimport { combineReducers } from \'redux\';\nimport { routerReducer } from \'react-router-redux\';\n\nconst rootReducer = combineReducers({ routing: routerReducer });\n\nexport default rootReducer;'
   },
   {
-    path: './src/styles/styles.css',
-    content: '@import \'./normalize.css\';'
+    path: './src/styles/globalStyles.js',
+    content: 'import { injectGlobal } from \'styled-components\';\n\ninjectGlobal\`\n\`;'
   },
   {
     path: './src/index.ejs',
     content: '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><title>Custom React App</title></head><body><div id="app"></div></body></html>'
   },
   {
-    path: './src/components/App.js',
+    path: './src/containers/App.js',
     content: '//Application root/wrapper component\nimport React from \'react\';\n\nclass App extends React.Component {\n  render() {\n    return (\n      <div></div>\n    );\n  }\n}\n\nexport default App;'
   }
 ];
