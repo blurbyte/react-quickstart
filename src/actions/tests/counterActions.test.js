@@ -1,5 +1,5 @@
-import * as actions from './counterActions';
-import * as types from './actionTypes';
+import * as actions from '../counterActions';
+import * as types from '../actionTypes';
 
 //synchronous actions BDD tests
 describe('Counter actions', () => {

@@ -1,5 +1,5 @@
-import * as actions from '../actions/counterActions';
-import counterReducer from './counterReducer';
+import * as actions from '../../actions/counterActions';
+import counterReducer from '../counterReducer';
 
 //reducer integration test
 describe('Counter reducer', () => {
