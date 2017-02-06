@@ -9,7 +9,7 @@ import HomeLink from './HomeLink';
 
 import ManageCounter from '../ManageCounter';
 
-const CounterPage = () => (
+const ManageCounterPage = () => (
   <ContentWrapper>
     <Helmet title="Manage Counter" />
     <MainHeadline>Manage Counter</MainHeadline>
@@ -19,4 +19,4 @@ const CounterPage = () => (
   </ContentWrapper>
 );
 
-export default CounterPage;
+export default ManageCounterPage;

@@ -10,7 +10,7 @@ import CounterPanel from './CounterPanel';
 //import actions
 import * as counterActions from '../../actions/counterActions';
 
-class CounterPage extends React.Component {
+class ManageCounter extends React.Component {
   //class constructor, not always needed
   constructor(props) {
     super(props);
@@ -55,7 +55,7 @@ class CounterPage extends React.Component {
   }
 }
 
-CounterPage.propTypes = {
+ManageCounter.propTypes = {
   counter: PropTypes.number.isRequired,
   actions: PropTypes.object.isRequired
 };
@@ -76,4 +76,4 @@ const mapDispatchToProps = (dispatch) => (
 );
 
 //connecting component with redux store via provider
-export default connect(mapStateToProps, mapDispatchToProps)(CounterPage);
+export default connect(mapStateToProps, mapDispatchToProps)(ManageCounter);
