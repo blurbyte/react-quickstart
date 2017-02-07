@@ -20,7 +20,7 @@ describe('<CounterButton />', () => {
   });
   it('should have children', () => {
     const component = renderComponent();
-    expect(component.contains(children)).toBeTruthy();
+    expect(component.contains(children)).toEqual(true);
   });
   it('should handle click event', () => {
     const onClickSpy = jest.fn();

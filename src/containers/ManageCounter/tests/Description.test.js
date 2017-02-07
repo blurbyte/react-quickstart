@@ -15,6 +15,6 @@ describe('<Description />', () => {
   it('should render given text', () => {
     const children = 'Test';
     const component = shallow(<Description>{children}</Description>);
-    expect(component.contains(children)).toBeTruthy();
+    expect(component.contains(children)).toEqual(true);
   });
 });

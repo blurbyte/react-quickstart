@@ -15,6 +15,6 @@ describe('<CounterValue />', () => {
   it('should render given value', () => {
     const children = 6;
     const component = shallow(<CounterValue>{children}</CounterValue>);
-    expect(component.contains(children)).toBeTruthy();
+    expect(component.contains(children)).toEqual(true);
   });
 });
