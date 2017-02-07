@@ -1,4 +1,5 @@
 import React from 'react';
+import MainHeadline from '../../components/MainHeadline';
 import NavLink from '../../components/NavLink';
 
 class NotFoundPage extends React.Component {
@@ -9,7 +10,7 @@ class NotFoundPage extends React.Component {
   render() {
     return (
       <section>
-        <h1>404 Not Found</h1>
+        <MainHeadline>404 Not Found</MainHeadline>
         <NavLink to="/">Take me back to Main Page</NavLink>
       </section>
     );
