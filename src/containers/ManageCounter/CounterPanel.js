@@ -35,8 +35,8 @@ CounterPanel.propTypes = {
   counter: PropTypes.number.isRequired,
   counterStep: PropTypes.number.isRequired,
   lowerLimit: PropTypes.number.isRequired,
-  onIncrease: PropTypes.func.isRequired,
-  onDecrease: PropTypes.func.isRequired
+  onIncrease: PropTypes.func,
+  onDecrease: PropTypes.func
 };
 
 export default CounterPanel;
