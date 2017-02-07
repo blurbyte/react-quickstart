@@ -89,7 +89,7 @@ class MainPage extends React.Component {
                     <td>Reports JavaScript and React syntax errors</td>
                   </tr>
                   <tr>
-                    <td><strong>webpack</strong>, webpack-dev-middleware, webpack-hot-middleware and all <em>loaders</em></td>
+                    <td><strong>webpack2</strong>, webpack-dev-middleware, webpack-hot-middleware and all <em>loaders</em></td>
                     <td>Bundles all modules into single file, enables React hot reloading &ndash; tweaking components in real time</td>
                   </tr>
                   <tr>
