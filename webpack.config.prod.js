@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import WebpackMd5Hash from 'webpack-md5-hash';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import OfflinePlugin from 'offline-plugin';
 import path from 'path';
 
 const GLOBALS = {
@@ -49,6 +50,11 @@ export default {
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false
+    }),
+    new OfflinePlugin({
+      relativePaths: false,
+      publicPath: '/',
+      autoUpdate: 1000 * 60 * 60 * 4
     })
   ],
   module: {
