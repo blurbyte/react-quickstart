@@ -1,4 +1,4 @@
-// store configuration (middlewares) depending on environment settingimport {createStore, applyMiddleware, compose} from 'redux';
+// store configuration (middlewares) depending on environment setting
 import { createStore, applyMiddleware, compose } from 'redux';
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 import thunk from 'redux-thunk';
