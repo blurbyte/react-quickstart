@@ -249,7 +249,7 @@ class MainPage extends React.Component {
                 <li>How to write Redux action creators, reducers and connect components with store</li>
                 <li>How to use Redux application state in combination with container component state</li>
                 <li>How to write simple unit tests for actions and integration tests for reducers</li>
-                <li>How to take advantage of <em>CSS modules</em></li>
+                <li>How to take advantage of <em>styled-components</em></li>
                 <li>How to integrate custom fonts</li>
               </ul>
             </Section>
