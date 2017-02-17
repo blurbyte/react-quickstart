@@ -64,7 +64,7 @@
     "react/prop-types": 1,
     "react/react-in-jsx-scope": 1,
     "import/extensions": 1,
-    "react/self-closing-comp": 1,
+    "react/self-closing-comp": 0,
     "react/sort-comp": 1,
     "react/jsx-wrap-multilines": 1,
     "jsx-a11y/aria-props": 2,
