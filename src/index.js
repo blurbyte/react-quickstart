@@ -1,3 +1,6 @@
+// required for redux-saga generatos
+import "regenerator-runtime/runtime";
+
 /*eslint-disable import/default */
 import React from 'react';
 import { render } from 'react-dom';

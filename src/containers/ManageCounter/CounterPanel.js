@@ -14,17 +14,17 @@ import Description from './Description';
 import CounterValue from './CounterValue';
 import CounterButton from './CounterButton';
 
-const CounterPanel = ({counter, counterStep, onIncrease, onDecrease, lowerLimit}) => (
+const CounterPanel = ({counter, onIncrease, onDecrease, lowerLimit}) => (
   // disable CounterButton if counter value is lower than limit
   <Wrapper>
     <CounterInfo>
       <Description>Current Counter Value</Description><CounterValue>{counter}</CounterValue>
     </CounterInfo>
-    <CounterButton onClick={onIncrease}>Increase Value By {counterStep}</CounterButton>
+    <CounterButton onClick={onIncrease}>Increase Value</CounterButton>
     {
       counter > lowerLimit ?
-      <CounterButton onClick={onDecrease}>Decrease Value By {counterStep}</CounterButton> :
-      <CounterButton disabled>Decrease Value By {counterStep}</CounterButton>
+      <CounterButton onClick={onDecrease}>Decrease Value </CounterButton> :
+      <CounterButton disabled>Decrease Value</CounterButton>
     }
   </Wrapper>
 );
@@ -33,7 +33,6 @@ const CounterPanel = ({counter, counterStep, onIncrease, onDecrease, lowerLimit}
 //you can pass strings, numbers, objects, arrays, etc.
 CounterPanel.propTypes = {
   counter: PropTypes.number.isRequired,
-  counterStep: PropTypes.number.isRequired,
   lowerLimit: PropTypes.number.isRequired,
   onIncrease: PropTypes.func,
   onDecrease: PropTypes.func

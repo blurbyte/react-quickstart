@@ -29,12 +29,13 @@
     "react-router",
     "quickstart",
     "jest",
-    "webpack2"
+    "webpack2",
+    "redux-saga"
   ],
   "author": "blurbyte",
   "license": "MIT",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "dependencies": {
     "promise-polyfill": "6.0.2",
@@ -46,7 +47,7 @@
     "react-router-redux": "4.0.7",
     "react-router-scroll": "0.4.1",
     "redux": "3.6.0",
-    "redux-thunk": "2.2.0",
+    "redux-saga": "0.14.3",
     "sanitize.css": "4.1.0",
     "styled-components": "1.4.0",
     "whatwg-fetch": "2.0.2"
@@ -58,6 +59,7 @@
     "babel-loader": "6.2.10",
     "babel-plugin-transform-react-constant-elements": "6.22.0",
     "babel-plugin-transform-react-remove-prop-types": "0.2.11",
+    "babel-plugin-transform-regenerator": "6.22.0",
     "babel-preset-latest": "6.22.0",
     "babel-preset-react": "6.22.0",
     "babel-preset-react-hmre": "1.1.1",
@@ -83,6 +85,7 @@
     "open": "0.0.5",
     "react-addons-test-utils": "15.4.2",
     "redux-immutable-state-invariant": "1.2.4",
+    "regenerator": "0.9.7",
     "rimraf": "2.5.4",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",

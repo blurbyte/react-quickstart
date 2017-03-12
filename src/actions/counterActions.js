@@ -2,34 +2,18 @@ import * as types from './actionTypes';
 
 //basic counter action creators
 
-export const increaseCounter = (amount) => (
-  { type: types.INCREASE_COUNTER, amount }
+export const increaseCounterByAmount = (amount) => (
+  { type: types.INCREASE_COUNTER_BY_AMOUNT, amount }
 );
 
-export const decreaseCounter = (amount) => (
-  { type: types.DECREASE_COUNTER, amount }
+export const decreaseCounterByAmount = (amount, lowerLimit) => (
+  { type: types.DECREASE_COUNTER_BY_AMOUNT, amount, lowerLimit }
 );
 
-//async action
-//example of delaying counter increment by set amout of miliseconds
-export const increaseCounterWithDelay = (amount, delay = 400) => {
-  return (dispatch) => {
-    setTimeout(() => {
-      dispatch(increaseCounter(amount));
-    }, delay);
-  };
-};
+export const increaseCounterSuccess = (amount) => (
+  { type: types.INCREASE_COUNTER_SUCCESS, amount }
+);
 
-//action creator which performs conditional dispatch
-//such logic could be placed in event handler as well
-export const decreaseIfGreaterThan = (amount, testValue) => {
-  return (dispatch, getState) => {
-    const {counter} = getState();
-    if(counter > testValue) {
-      dispatch(decreaseCounter(amount));
-    }
-    else {
-      return;
-    }
-  };
-};
+export const decreaseCounterSuccess = (amount) => (
+  { type: types.DECREASE_COUNTER_SUCCESS, amount }
+);

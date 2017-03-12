@@ -1,7 +1,7 @@
 # Welcome to React Quickstart
 [![Build Status](https://travis-ci.org/blurbyte/react-quickstart.svg?branch=master)](https://travis-ci.org/blurbyte/react-quickstart)
 
-React Quickstart is starting kit for creating fast and responsive web applications with React. It takes care of initial developement environment setup, boilerplating and puts everything to use in simple example. Notable technologies used are: __React__, __Redux__, __React Router__, __Babel__, __Webpack__, __ESLint__.
+React Quickstart is starting kit for creating fast and responsive web applications with React. It takes care of initial developement environment setup, boilerplating and puts everything to use in simple example. Notable technologies used are: __React__, __Redux__, __React Router__, __Babel__, __Webpack2__, __ESLint__.
 
 ###Getting started!
 Just follow a few easy steps to set project up:
@@ -17,7 +17,8 @@ By inspecting source code of demo application you can get a good grasp of:
   1. How to set up JavaScript development environment for single page React web app
   2. How to organize file structure of your project
   3. How to write Redux action creators, reducers and connect components with store
-  4. How to use Redux application state in combination with container component state
-  5. How to write simple unit tests for actions and integration tests for reducers
-  6. How to take advantage of *styled-components*
-  7. How to integrate custom fonts
+  4. How to manage side effects with redux-saga
+  5. How to use Redux application state in combination with container component state
+  6. How to write simple unit tests for actions and integration tests for reducers
+  7. How to take advantage of *styled-components*
+  8. How to integrate custom fonts

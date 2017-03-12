@@ -8,7 +8,7 @@ const Button = styled.button`
   font-size: 1.4rem;
   text-transform: uppercase;
   line-height: 3.4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   cursor: pointer;
   border-radius: 6px;
   transition: all 0.4s ease;

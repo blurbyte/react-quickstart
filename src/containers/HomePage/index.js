@@ -25,7 +25,7 @@ class MainPage extends React.Component {
       <ContentWrapper>
         <Helmet title="Overview" />
         <MainHeadline>Welcome to React Quickstart</MainHeadline>
-        <MainParagraph>React Quickstart is starting kit for creating fast and responsive web applications with React. It takes care of initial developement environment setup, boilerplating and puts everything to use in simple example. Notable technologies used are: React, Redux, React Router, Babel, Webpack, ESLint.</MainParagraph>
+        <MainParagraph>React Quickstart is starting kit for creating fast and responsive web applications with React. It takes care of initial developement environment setup, boilerplating and puts everything to use in simple example. Notable technologies used are: React, Redux, React Router, Babel, Webpack2, ESLint.</MainParagraph>
         <LayoutWrapper>
           <LayoutMainColumn>
             <Section>
@@ -65,8 +65,8 @@ class MainPage extends React.Component {
                     <td>Holds state of application in single place, solves data flow between components</td>
                   </tr>
                   <tr>
-                    <td><strong>redux-thunk</strong></td>
-                    <td>Handy middleware to write async Redux action creators</td>
+                    <td><strong>redux-saga</strong></td>
+                    <td>Library for managing side effects, such as asynchronous data fetching, in redux</td>
                   </tr>
                   <tr>
                     <td><strong>react-router</strong>, react-router-redux, react-router-scroll</td>
@@ -224,6 +224,10 @@ class MainPage extends React.Component {
                 <dd>combines all reducers into single one</dd>
               </dl>
               <dl>
+                <dt><b>src</b>/<b>sagas</b></dt>
+                <dd>managing side effects with redux-saga</dd>
+              </dl>
+              <dl>
                 <dt><b>src</b>/<b>components</b></dt>
                 <dd>React presentational components</dd>
                 <dd>tests and styles for each component in the same location</dd>
@@ -247,6 +251,7 @@ class MainPage extends React.Component {
                 <li>How to set up JavaScript development environment for single page React web app</li>
                 <li>How to organize file structure of your project</li>
                 <li>How to write Redux action creators, reducers and connect components with store</li>
+                <li>How to manage side effects with redux-saga</li>
                 <li>How to use Redux application state in combination with container component state</li>
                 <li>How to write simple unit tests for actions and integration tests for reducers</li>
                 <li>How to take advantage of <em>styled-components</em></li>

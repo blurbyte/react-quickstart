@@ -9,7 +9,7 @@ describe('Counter reducer', () => {
     const stateAfter = 13;
 
     //act
-    const action = actions.increaseCounter(3);
+    const action = actions.increaseCounterSuccess(3);
 
     Object.freeze(stateBefore);
     Object.freeze(action);
@@ -23,7 +23,7 @@ describe('Counter reducer', () => {
     const stateAfter = 7;
 
     //act
-    const action = actions.decreaseCounter(3);
+    const action = actions.decreaseCounterSuccess(3);
 
     Object.freeze(stateBefore);
     Object.freeze(action);
