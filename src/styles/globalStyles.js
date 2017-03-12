@@ -114,4 +114,14 @@ injectGlobal`
   table tbody tr:hover {
     background: rgba(255,67,38,0.1);
   }
+
+  ::-moz-selection {
+    background: rgba(255,67,38,0.2);
+    color: inherit;
+  }
+
+  ::selection {
+    background: rgba(255,67,38,0.2);
+    color: inherit;
+  }
 `;
