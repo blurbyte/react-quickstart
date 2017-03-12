@@ -38,19 +38,24 @@ class ManageCounter extends React.Component {
 
   onIncrease() {
     //dispatch action creator
-    this.props.actions.increaseCounter(this.state.counterStep);
+    this.props.actions.increaseCounterByAmount(this.state.counterStep);
   }
 
   onDecrease() {
     const {counterStep, counterLowerLimit} = this.state;
-    this.props.actions.decreaseIfGreaterThan(counterStep, counterLowerLimit);
+    this.props.actions.decreaseCounterByAmount(counterStep, counterLowerLimit);
   }
 
   render() {
-    const {counterStep, counterLowerLimit} = this.state;
+    const {counterLowerLimit} = this.state;
     const {counter} = this.props;
     return (
-      <CounterPanel counter={counter} counterStep={counterStep} onIncrease={this.onIncrease} onDecrease={this.onDecrease} lowerLimit={counterLowerLimit} />
+      <CounterPanel
+        counter={counter}
+        onIncrease={this.onIncrease}
+        onDecrease={this.onDecrease}
+        lowerLimit={counterLowerLimit}
+      />
     );
   }
 }

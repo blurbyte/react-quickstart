@@ -25,17 +25,19 @@ describe('<CounterPanel />', () => {
     expect(component.find(CounterButton).length).toEqual(2);
   });
   it('should render increase value button', () => {
-    const children = ['Increase Value By ', 2];
+    // children could also take array of values, for example:
+    // const children = ['Increase Value by', 2];
+    const children = 'Increase Value';
     const component = renderComponent();
     expect(component.find(CounterButton).filter({ children }).length).toEqual(1);
   });
   it('should render decrease value button', () => {
-    const children = ['Decrease Value By ', 2];
+    const children = 'Decrease Value';
     const component = renderComponent();
     expect(component.find(CounterButton).filter({ children }).length).toEqual(1);
   });
   it('decrease value button should be disabled if counter reaches lower limit', () => {
-    const children = ['Decrease Value By ', 2];
+    const children = 'Decrease Value';
     const component = renderComponent({ counter: -4, counterStep: 2, lowerLimit: -4 });
     expect(component.find(CounterButton).filter({ children }).prop('disabled')).toEqual(true);
   });
