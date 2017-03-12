@@ -4,7 +4,7 @@ import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 import createSagaMiddleware from 'redux-saga';
 
 import rootReducer from './reducers';
-import counterSagas from './sagas/counterSagas';
+import rootSaga from './sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -15,7 +15,7 @@ function configureStoreProd(initialState) {
 
   const prodStore = createStore(rootReducer, initialState, compose(applyMiddleware(...middlewares)));
 
-  sagaMiddleware.run(counterSagas);
+  sagaMiddleware.run(rootSaga);
 
   return prodStore;
 }
@@ -38,7 +38,7 @@ function configureStoreDev(initialState) {
     });
   }
 
-  sagaMiddleware.run(counterSagas);
+  sagaMiddleware.run(rootSaga);
 
   return devStore;
 }
