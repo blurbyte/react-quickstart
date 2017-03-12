@@ -16,7 +16,7 @@ export function* increaseCounterAsync() {
     // waits for INCREASE_COUNTER_BY_AMOUNT action to be dispatched
     const { amount } = yield take(types.INCREASE_COUNTER_BY_AMOUNT);
 
-    yield call(delay, 200);
+    yield call(delay, 100);
 
     // only for first 4 times, when action got dispatched
     // it doubles the increased amount
@@ -35,7 +35,7 @@ export function* decreaseCounterAsync() {
     // waits for DECREASE_COUNTER_BY_AMOUNT action to be dispatched
     const { amount, lowerLimit } = yield take(types.DECREASE_COUNTER_BY_AMOUNT);
 
-    yield call(delay, 200);
+    yield call(delay, 100);
 
     // gets counter value from store
     const currentCounterValue = yield select(counterValueFromState);
