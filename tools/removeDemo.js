@@ -8,6 +8,7 @@ const pathsToRemove = [
   './src/components/*',
   './src/containers/*',
   './src/reducers/*',
+  './src/sagas/*',
   './src/fonts',
   './src/styles/globalStyles.js',
   './src/routes.js',
@@ -18,19 +19,19 @@ const pathsToRemove = [
 const filesToCreate = [
   {
     path: './src/actions/actionTypes.js',
-    content: '//Action types constants'
+    content: '// Action types constants'
   },
   {
     path: './src/routes.js',
-    content: '//Application routes declarations\nimport React from \'react\';\nimport { Route } from \'react-router\';\n\nimport App from \'./containers/App\';\n\nexport default (\n  <Route path="/" component={App}>\n  </Route>\n);'
+    content: '// Application routes declarations\nimport React from \'react\';\nimport { Route } from \'react-router\';\n\nimport App from \'./containers/App\';\n\nexport default (\n  <Route path="/" component={App}>\n  </Route>\n);'
   },
   {
     path: './src/reducers/initialState.js',
-    content: '//Reducers\' default state'
+    content: '// Reducers\' default state'
   },
   {
     path: './src/reducers/index.js',
-    content: '//Root reducer setup\nimport { combineReducers } from \'redux\';\nimport { routerReducer } from \'react-router-redux\';\n\nconst rootReducer = combineReducers({ routing: routerReducer });\n\nexport default rootReducer;'
+    content: '// Root reducer setup\nimport { combineReducers } from \'redux\';\nimport { routerReducer } from \'react-router-redux\';\n\nconst rootReducer = combineReducers({ routing: routerReducer });\n\nexport default rootReducer;'
   },
   {
     path: './src/styles/globalStyles.js',
@@ -42,7 +43,15 @@ const filesToCreate = [
   },
   {
     path: './src/containers/App.js',
-    content: '//Application root/wrapper component\nimport React from \'react\';\n\nclass App extends React.Component {\n  render() {\n    return (\n      <div></div>\n    );\n  }\n}\n\nexport default App;'
+    content: '// Application root/wrapper component\nimport React from \'react\';\n\nclass App extends React.Component {\n  render() {\n    return (\n      <div></div>\n    );\n  }\n}\n\nexport default App;'
+  },
+  {
+    path: './src/sagas/defaultSaga.js',
+    content: '// Default redux saga\nimport { fork } from \'redux-saga/effects\';\n\nexport function* dummySaga() {\n  yield;\n}\n\nexport default function* defaultSagas() {\n  yield [\n    fork(dummySaga)\n  ];\n}'
+  },
+  {
+    path: './src/sagas/index.js',
+    content: '// Root saga\nimport { fork } from \'redux-saga/effects\';\n\nimport defaultSaga from \'./defaultSaga\';\n\nexport default function* rootSaga() {\n  yield [\n    fork(defaultSaga)\n  ];\n}'
   }
 ];
 
