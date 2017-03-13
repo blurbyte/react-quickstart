@@ -251,7 +251,7 @@ class MainPage extends React.Component {
                 <li>How to set up JavaScript development environment for single page React web app</li>
                 <li>How to organize file structure of your project</li>
                 <li>How to write Redux action creators, reducers and connect components with store</li>
-                <li>How to manage side effects with redux-saga</li>
+                <li>How to manage side effects with <em>redux-saga</em></li>
                 <li>How to use Redux application state in combination with container component state</li>
                 <li>How to write simple unit tests for actions and integration tests for reducers</li>
                 <li>How to take advantage of <em>styled-components</em></li>

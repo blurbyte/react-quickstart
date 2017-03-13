@@ -17,7 +17,7 @@ By inspecting source code of demo application you can get a good grasp of:
   1. How to set up JavaScript development environment for single page React web app
   2. How to organize file structure of your project
   3. How to write Redux action creators, reducers and connect components with store
-  4. How to manage side effects with redux-saga
+  4. How to manage side effects with *redux-saga*
   5. How to use Redux application state in combination with container component state
   6. How to write simple unit tests for actions and integration tests for reducers
   7. How to take advantage of *styled-components*
