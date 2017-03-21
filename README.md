@@ -3,7 +3,7 @@
 
 React Quickstart is starting kit for creating fast and responsive web applications with React. It takes care of initial developement environment setup, boilerplating and puts everything to use in simple example. Notable technologies used are: __React__, __Redux__, __React Router__, __Babel__, __Webpack2__, __ESLint__.
 
-###Getting started!
+### Getting started!
 Just follow a few easy steps to set project up:
   1. Install __Node__, preferably > __6.9.1__
   2. Install __Git__
@@ -12,7 +12,7 @@ Just follow a few easy steps to set project up:
   5. Enter project folder and install all required modules with simple `yarn` command
   6. Start demo aplication `npm start -s` and follow further instructions 🙂
 
-###What will you learn?
+### What will you learn?
 By inspecting source code of demo application you can get a good grasp of:
   1. How to set up JavaScript development environment for single page React web app
   2. How to organize file structure of your project
