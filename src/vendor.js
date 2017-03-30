@@ -6,7 +6,7 @@ import 'react-dom';
 import 'redux';
 import 'react-redux';
 import 'redux-saga';
-import 'react-router';
+import 'react-router-dom';
 import 'react-router-redux';
 import 'react-helmet';
 import 'styled-components';
