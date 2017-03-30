@@ -170,10 +170,6 @@ class MainPage extends React.Component {
                 <dd>cache busting with hashed names for bundled files</dd>
               </dl>
               <dl>
-                <dt><b>src</b>/routes.js</dt>
-                <dd>react-router routes declarations</dd>
-              </dl>
-              <dl>
                 <dt><b>src</b>/index.js</dt>
                 <dd>application starting point</dd>
                 <dd>Redux store and provider configuration</dd>
@@ -240,6 +236,7 @@ class MainPage extends React.Component {
               <dl>
                 <dt><b>src</b>/<b>containers</b>/<b>App</b></dt>
                 <dd>React application root/wrapper component</dd>
+                <dd>contains react-router routes declarations</dd>
               </dl>
             </Section>
           </LayoutMainColumn>
