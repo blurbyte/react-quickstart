@@ -38,11 +38,11 @@ const filesToCreate = [
   },
   {
     path: './src/containers/App.js',
-    content: '// Application root/wrapper component\nimport React from \'react\';\n\nclass App extends React.Component {\n  render() {\n    return (\n      <div></div>\n    );\n  }\n}\n\nexport default App;'
+    content: 'import React from \'react\';\n\n// import components from react-router-dom if needed\n\nclass App extends React.Component {\n  render() {\n    return (\n      <div>React Quickstart</div>\n    );\n  }\n}\n\nexport default App;'
   },
   {
-    path: './src/components/ScrollToTop.js',
-    content: '// helper component which scrolls page to top on each route change\n\nimport React, { PropTypes } from \'react\';\nimport { withRouter } from \'react-router-dom\';\n\nclass ScrollToTop extends React.Component {\n  componentDidUpdate(prevProps) {\n    if (this.props.location.key !== prevProps.location.key) {\n      window.scrollTo(0, 0);\n    }\n  }\n\n  render() {\n    return this.props.children;\n  }\n}\n\nScrollToTop.propTypes = {\n  children: PropTypes.node.isRequired,\n  location: PropTypes.object.isRequired\n};\n\nexport default withRouter(ScrollToTop);'
+    path: './src/containers/Root.js',
+    content: '// such root component is required react-hot-loader to work properly\nimport React, { PropTypes } from \'react\';\nimport { Provider } from \'react-redux\';\n\n// router\nimport { ConnectedRouter } from \'react-router-redux\';\n\n// main app container \nimport App from \'./App\';\n\nexport default class Root extends React.Component {\n  render() {\n    const { store, history } = this.props;\n    return (\n      <Provider store={store}>\n        <ConnectedRouter history={history}>\n          <App />\n        </ConnectedRouter>\n      </Provider>\n    );\n  }\n}\n\nRoot.propTypes = {\n  store: PropTypes.object.isRequired,\n  history: PropTypes.object.isRequired\n};'
   },
   {
     path: './src/sagas/defaultSaga.js',
