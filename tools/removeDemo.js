@@ -11,7 +11,6 @@ const pathsToRemove = [
   './src/sagas/*',
   './src/fonts',
   './src/styles/globalStyles.js',
-  './src/routes.js',
   './src/index.ejs',
   './tools/removeDemo.js'
 ];
@@ -20,10 +19,6 @@ const filesToCreate = [
   {
     path: './src/actions/actionTypes.js',
     content: '// Action types constants'
-  },
-  {
-    path: './src/routes.js',
-    content: '// Application routes declarations\nimport React from \'react\';\nimport { Route } from \'react-router\';\n\nimport App from \'./containers/App\';\n\nexport default (\n  <Route path="/" component={App}>\n  </Route>\n);'
   },
   {
     path: './src/reducers/initialState.js',
@@ -44,6 +39,10 @@ const filesToCreate = [
   {
     path: './src/containers/App.js',
     content: '// Application root/wrapper component\nimport React from \'react\';\n\nclass App extends React.Component {\n  render() {\n    return (\n      <div></div>\n    );\n  }\n}\n\nexport default App;'
+  },
+  {
+    path: './src/components/ScrollToTop.js',
+    content: '// helper component which scrolls page to top on each route change\n\nimport React, { PropTypes } from \'react\';\nimport { withRouter } from \'react-router-dom\';\n\nclass ScrollToTop extends React.Component {\n  componentDidUpdate(prevProps) {\n    if (this.props.location.key !== prevProps.location.key) {\n      window.scrollTo(0, 0);\n    }\n  }\n\n  render() {\n    return this.props.children;\n  }\n}\n\nScrollToTop.propTypes = {\n  children: PropTypes.node.isRequired,\n  location: PropTypes.object.isRequired\n};\n\nexport default withRouter(ScrollToTop);'
   },
   {
     path: './src/sagas/defaultSaga.js',
