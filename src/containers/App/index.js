@@ -1,5 +1,12 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
+// Switch is required for NotFoundPage
+import { Route, Switch } from 'react-router-dom';
+
+//import containers for router
+import HomePage from '../HomePage';
+import ManageCounterPage from '../ManageCounterPage';
+import NotFoundPage from '../NotFoundPage';
 
 //components
 import AppWrapper from './AppWrapper';
@@ -12,15 +19,14 @@ class App extends React.Component {
       <AppWrapper>
         <Helmet titleTemplate="%s | React Quickstart" defaultTitle="React Quickstart" meta={[{ name: 'description', content: 'React starter kit for single page web applications development.' }]} />
         <Header />
-        {this.props.children}
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/counter" component={ManageCounterPage} />
+          <Route component={NotFoundPage} />
+        </Switch>
       </AppWrapper>
     );
   }
 }
 
-App.propTypes = {
-  children: PropTypes.object.isRequired
-};
-
-//App component decorated to enable react-css-modules
 export default App;

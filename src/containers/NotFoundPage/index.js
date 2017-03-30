@@ -1,4 +1,8 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+
+// components
+import ContentWrapper from '../../components/ContentWrapper';
 import MainHeadline from '../../components/MainHeadline';
 import NavLink from '../../components/NavLink';
 
@@ -9,10 +13,11 @@ class NotFoundPage extends React.Component {
 
   render() {
     return (
-      <section>
+      <ContentWrapper>
+        <Helmet title="404 Not Found" />
         <MainHeadline>404 Not Found</MainHeadline>
         <NavLink to="/">Take me back to Main Page</NavLink>
-      </section>
+      </ContentWrapper>
     );
   }
 }

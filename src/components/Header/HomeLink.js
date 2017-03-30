@@ -1,7 +1,7 @@
-import { IndexLink } from 'react-router';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const HomeLink = styled(IndexLink)`
+const HomeLink = styled(Link)`
   height: 4rem;
   border-right: 1px solid #908e89;
   display: inline-block;

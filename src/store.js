@@ -2,15 +2,22 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 import createSagaMiddleware from 'redux-saga';
+import { routerMiddleware } from 'react-router-redux';
+import createHistory from 'history/createBrowserHistory';
 
 import rootReducer from './reducers';
 import rootSaga from './sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 
+// export history for application entry point
+export const history = createHistory();
+const reactRouterMiddleware = routerMiddleware(history);
+
 function configureStoreProd(initialState) {
   const middlewares = [
-    sagaMiddleware
+    sagaMiddleware,
+    reactRouterMiddleware
   ];
 
   const prodStore = createStore(rootReducer, initialState, compose(applyMiddleware(...middlewares)));
@@ -23,6 +30,7 @@ function configureStoreProd(initialState) {
 function configureStoreDev(initialState) {
   const middlewares = [
     sagaMiddleware,
+    reactRouterMiddleware,
     reduxImmutableStateInvariant()
   ];
 

@@ -6,12 +6,11 @@ import CounterPanel from '../CounterPanel';
 
 
 import { Provider } from 'react-redux';
-import { browserHistory } from 'react-router';
 import configureStore from '../../../store';
 
 describe('<ManageCounter />', () => {
   it('should contain <CounterPanel />', () => {
-    const store = configureStore({}, browserHistory);
+    const store = configureStore({});
     const actions = {
       increaseCounter: () => { },
       decreaseCounter: () => { }

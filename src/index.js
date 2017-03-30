@@ -10,13 +10,14 @@ import { Provider } from 'react-redux';
 import 'sanitize.css/sanitize.css';
 
 //router
-import { Router, browserHistory, applyRouterMiddleware } from 'react-router';
-import { syncHistoryWithStore } from 'react-router-redux';
-import { useScroll } from 'react-router-scroll';
-import routes from './routes';
+import { ConnectedRouter } from 'react-router-redux';
 
-//redux store
-import configureStore from './store';
+//redux store configuration and browser history
+import configureStore, { history } from './store';
+
+//main app container and ScrollToTop helper
+import App from './containers/App';
+import ScrollToTop from './components/ScrollToTop';
 
 //es6 promises polyfill
 import Promise from 'promise-polyfill';
@@ -38,11 +39,14 @@ import './styles/globalStyles';
 //const store = configureStore({ counter: 10 });
 const initialState = {};
 const store = configureStore(initialState);
-const history = syncHistoryWithStore(browserHistory, store);
 
 render(
   <Provider store={store}>
-    <Router history={history} routes={routes} render={applyRouterMiddleware(useScroll())} />
+    <ConnectedRouter history={history}>
+      <ScrollToTop>
+        <App />
+      </ScrollToTop>
+    </ConnectedRouter>
   </Provider>,
   document.getElementById('app')
 );
