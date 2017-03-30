@@ -10,6 +10,9 @@
       "presets": [
         "latest",
         "react-hmre"
+      ],
+      "plugins": [
+        "react-hot-loader/babel"
       ]
     },
     "production": {

@@ -11,6 +11,7 @@ export default {
   devtool: 'cheap-module-eval-source-map',
   entry: [
     './src/webpack-public-path',
+    'react-hot-loader/patch',
     'webpack-hot-middleware/client?reload=true',
     path.resolve(__dirname, 'src/index')
   ],
