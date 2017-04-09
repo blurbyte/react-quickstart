@@ -1,12 +1,13 @@
 //presentational component
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 //components
 import NavLink from '../../components/NavLink';
 import Wrapper from './Wrapper';
 import CounterValue from './CounterValue';
 
-const Counter = ({counter}) => (
+const Counter = ({ counter }) => (
   <Wrapper>
     <NavLink to="/counter">Manage example counter</NavLink>
     <CounterValue>{counter}</CounterValue>

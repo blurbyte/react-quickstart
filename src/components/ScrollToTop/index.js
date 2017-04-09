@@ -1,6 +1,7 @@
 // helper component which scrolls page to top on each route change
 
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
 class ScrollToTop extends React.Component {

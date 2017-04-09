@@ -1,7 +1,8 @@
 //Container (smart) component
-import React, {PropTypes} from 'react';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 //import other components, most likely presentational ones
 import Counter from './Counter';
@@ -11,7 +12,7 @@ import * as counterActions from '../../actions/counterActions';
 
 class HeaderCounter extends React.Component {
   render() {
-    const {counter} = this.props;
+    const { counter } = this.props;
     return (
       <Counter counter={counter} />
     );

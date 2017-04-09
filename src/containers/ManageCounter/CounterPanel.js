@@ -5,7 +5,8 @@
 //example of ES2015 default parameter and template strings
 //doesn't have to alwas receive props: const PresentationalComponent = () => (...);
 
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 //components
 import Wrapper from './Wrapper';

@@ -42,7 +42,7 @@ const filesToCreate = [
   },
   {
     path: './src/containers/Root.js',
-    content: '// such root component is required react-hot-loader to work properly\nimport React, { PropTypes } from \'react\';\nimport { Provider } from \'react-redux\';\n\n// router\nimport { ConnectedRouter } from \'react-router-redux\';\n\n// main app container \nimport App from \'./App\';\n\nexport default class Root extends React.Component {\n  render() {\n    const { store, history } = this.props;\n    return (\n      <Provider store={store}>\n        <ConnectedRouter history={history}>\n          <App />\n        </ConnectedRouter>\n      </Provider>\n    );\n  }\n}\n\nRoot.propTypes = {\n  store: PropTypes.object.isRequired,\n  history: PropTypes.object.isRequired\n};'
+    content: '// such root component is required react-hot-loader to work properly\nimport React from \'react\';\nimport PropTypes from \'prop-types\';\nimport { Provider } from \'react-redux\';\n\n// router\nimport { ConnectedRouter } from \'react-router-redux\';\n\n// main app container \nimport App from \'./App\';\n\nexport default class Root extends React.Component {\n  render() {\n    const { store, history } = this.props;\n    return (\n      <Provider store={store}>\n        <ConnectedRouter history={history}>\n          <App />\n        </ConnectedRouter>\n      </Provider>\n    );\n  }\n}\n\nRoot.propTypes = {\n  store: PropTypes.object.isRequired,\n  history: PropTypes.object.isRequired\n};'
   },
   {
     path: './src/sagas/defaultSaga.js',
