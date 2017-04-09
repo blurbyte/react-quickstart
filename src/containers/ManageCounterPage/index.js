@@ -11,7 +11,9 @@ import ManageCounter from '../ManageCounter';
 
 const ManageCounterPage = () => (
   <ContentWrapper>
-    <Helmet title="Manage Counter" />
+    <Helmet>
+      <title>Manage Counter</title>
+    </Helmet>
     <MainHeadline>Manage Counter</MainHeadline>
     <MainParagraph>It's simple Redux counter example. Current counter value is held in Redux Store. Counter shown in header and on this page below are connected to Redux Store &mdash; value got updated instantly in both places. It also persists even if you move between pages.</MainParagraph>
     <ManageCounter />

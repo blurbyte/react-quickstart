@@ -23,7 +23,9 @@ class MainPage extends React.Component {
   render() {
     return (
       <ContentWrapper>
-        <Helmet title="Overview" />
+        <Helmet>
+          <title>Overview</title>
+        </Helmet>
         <MainHeadline>Welcome to React Quickstart</MainHeadline>
         <MainParagraph>React Quickstart is starting kit for creating fast and responsive web applications with React. It takes care of initial developement environment setup, boilerplating and puts everything to use in simple example. Notable technologies used are: React, Redux, React Router, Babel, Webpack2, ESLint.</MainParagraph>
         <LayoutWrapper>

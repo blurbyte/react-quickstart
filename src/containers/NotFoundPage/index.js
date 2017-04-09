@@ -14,7 +14,9 @@ class NotFoundPage extends React.Component {
   render() {
     return (
       <ContentWrapper>
-        <Helmet title="404 Not Found" />
+        <Helmet>
+          <title>404 Not Found</title>
+        </Helmet>
         <MainHeadline>404 Not Found</MainHeadline>
         <NavLink to="/">Take me back to Main Page</NavLink>
       </ContentWrapper>
