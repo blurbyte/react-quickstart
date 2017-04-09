@@ -1,5 +1,8 @@
+// styles reset
+import 'sanitize.css/sanitize.css';
+
 // required for redux-saga generatos
-import "regenerator-runtime/runtime";
+import 'regenerator-runtime/runtime';
 
 import React from 'react';
 import { render } from 'react-dom';
@@ -7,9 +10,6 @@ import { AppContainer } from 'react-hot-loader';
 
 // root component required for react-hot-loader
 import Root from './containers/Root';
-
-// styles reset
-import 'sanitize.css/sanitize.css';
 
 // redux store configuration and browser history
 import configureStore, { history } from './store';
