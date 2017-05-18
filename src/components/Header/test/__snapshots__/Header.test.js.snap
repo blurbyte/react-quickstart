@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render correctly 1`] = `
+<Banner>
+  <LogoWrapper>
+    <HomeLink
+      to="/"
+    >
+      <Logo />
+    </HomeLink>
+    <ProjectTitle>
+      React Quickstart
+    </ProjectTitle>
+  </LogoWrapper>
+  <HeaderCounter />
+</Banner>
+`;
