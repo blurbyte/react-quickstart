@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContentWrapper /> should render correctly 1`] = `
+.gUazqK {
+  margin: 0 auto;
+  padding: 10rem 6.4rem;
+  max-width: 1440px;
+}
+
+<article
+  className="gUazqK"
+/>
+`;
