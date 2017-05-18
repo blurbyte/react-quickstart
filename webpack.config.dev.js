@@ -8,7 +8,7 @@ const GLOBALS = {
 };
 
 export default {
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'eval-source-map',
   entry: [
     './src/webpack-public-path',
     'react-hot-loader/patch',
