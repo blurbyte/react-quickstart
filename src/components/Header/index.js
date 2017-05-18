@@ -5,10 +5,10 @@ import Banner from './Banner';
 import LogoWrapper from './LogoWrapper';
 import HomeLink from './HomeLink';
 import ProjectTitle from './ProjectTitle';
-import Logo from '../Icons/Logo';
+import Logo from 'components/Icons/Logo';
 
 // container
-import HeaderCounter from '../../containers/HeaderCounter';
+import HeaderCounter from 'containers/HeaderCounter';
 
 const Header = () => (
   <Banner>

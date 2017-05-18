@@ -38,7 +38,11 @@
     "node": ">=6"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
   },
   "dependencies": {
     "history": "4.6.1",
@@ -73,6 +77,7 @@
     "css-loader": "0.26.1",
     "enzyme": "2.8.2",
     "eslint": "3.19.0",
+    "eslint-import-resolver-webpack": "0.8.1",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "3.0.2",
     "eslint-plugin-react": "6.9.0",

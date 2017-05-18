@@ -1,4 +1,6 @@
-{
+const path = require('path');
+
+module.exports = {
   "root": true,
   "extends": [
     "eslint:recommended",
@@ -36,6 +38,7 @@
     "no-alert": 0,
     "no-lone-blocks": 0,
     "jsx-quotes": 1,
+    "import/no-unresolved": 2,
     "react/display-name": [ 1, {"ignoreTranspilerName": false }],
     "react/forbid-prop-types": [1, {"forbid": ["any"]}],
     "react/jsx-boolean-value": 0,
@@ -74,6 +77,13 @@
     "jsx-a11y/mouse-events-have-key-events": 2,
     "jsx-a11y/role-has-required-aria-props": 2,
     "jsx-a11y/role-supports-aria-props": 2
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": path.resolve(__dirname, 'webpack.config.prod.js')
+      }
+    }
   },
   "globals": {
   }
