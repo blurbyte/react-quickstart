@@ -37,6 +37,9 @@
   "engines": {
     "node": ">=6"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "history": "4.6.1",
     "promise-polyfill": "6.0.2",
