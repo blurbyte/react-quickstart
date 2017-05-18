@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextLink /> should render correctly 1`] = `
+.ifuQuG {
+  color: #ff4326;
+}
+
+.ifuQuG:hover {
+  text-decoration: underline;
+}
+
+<a
+  className="ifuQuG"
+  href="https://google.com"
+  target="_blank"
+>
+  Google.com
+</a>
+`;

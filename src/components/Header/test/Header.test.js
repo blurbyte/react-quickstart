@@ -8,8 +8,8 @@ jest.mock('../Banner', () => 'Banner');
 jest.mock('../LogoWrapper', () => 'LogoWrapper');
 jest.mock('../HomeLink', () => 'HomeLink');
 jest.mock('../ProjectTitle', () => 'ProjectTitle');
-jest.mock('../../Icons/Logo', () => 'Logo');
-jest.mock('../../../containers/HeaderCounter', () => 'HeaderCounter');
+jest.mock('components/Icons/Logo', () => 'Logo');
+jest.mock('containers/HeaderCounter', () => 'HeaderCounter');
 
 describe('<Header />', () => {
   it('should render correctly', () => {
