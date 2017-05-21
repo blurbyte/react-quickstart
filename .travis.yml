@@ -7,7 +7,7 @@ cache:
   directories:
   - node_modules
 install:
-  - yarn install codecov
+  - npm install codecov
 script:
   - npm run lint
   - npm test:coverage
