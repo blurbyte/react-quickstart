@@ -8,6 +8,7 @@ import Root from '../index';
 
 // mocked components
 jest.mock('containers/App', () => 'App');
+jest.mock('components/ScrollToTop', () => 'ScrollToTop');
 
 describe('<Root />', () => {
   it('should render correctly', () => {
