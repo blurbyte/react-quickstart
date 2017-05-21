@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFoundPage /> should render correctly 1`] = `
+<ContentWrapper>
+  <Helmet>
+    <title>
+      404 Not Found
+    </title>
+  </Helmet>
+  <MainHeadline>
+    404 Not Found
+  </MainHeadline>
+  <NavLink
+    to="/"
+  >
+    Take me back to Main Page
+  </NavLink>
+</ContentWrapper>
+`;
