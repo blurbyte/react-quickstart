@@ -2,11 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 //components
-import ContentWrapper from '../../components/ContentWrapper';
-import MainHeadline from '../../components/MainHeadline';
-import SecondaryHeadline from '../../components/SecondaryHeadline';
-import MainParagraph from '../../components/MainParagraph';
-import TextLink from '../../components/TextLink';
+import ContentWrapper from 'components/ContentWrapper';
+import MainHeadline from 'components/MainHeadline';
+import SecondaryHeadline from 'components/SecondaryHeadline';
+import MainParagraph from 'components/MainParagraph';
+import TextLink from 'components/TextLink';
 import LayoutWrapper from './LayoutWrapper';
 import LayoutMainColumn from './LayoutMainColumn';
 import LayoutSecondaryColumn from './LayoutSecondaryColumn';
