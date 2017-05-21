@@ -9,7 +9,7 @@ import { bindActionCreators } from 'redux';
 import CounterPanel from './CounterPanel';
 
 //import actions
-import * as counterActions from '../../actions/counterActions';
+import * as counterActions from 'actions/counterActions';
 
 class ManageCounter extends React.Component {
   //class constructor, not always needed

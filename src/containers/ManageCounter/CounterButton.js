@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from '../../components/Button';
 import styled from 'styled-components';
+
+
+import Button from 'components/Button';
 
 const StyledButton = styled(Button)`
   margin-right: 1.4rem;
@@ -11,7 +13,7 @@ const StyledButton = styled(Button)`
   }
 `;
 
-const CounterButton = ({disabled, children, onClick}) => (
+const CounterButton = ({ disabled, children, onClick }) => (
   <StyledButton onClick={onClick} disabled={disabled}>
     {children}
   </StyledButton>
