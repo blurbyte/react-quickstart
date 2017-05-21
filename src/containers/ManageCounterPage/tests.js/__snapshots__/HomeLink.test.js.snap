@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeLink /> should render correctly 1`] = `
+.kQlxmu {
+  font-family: 'OpenSans Light', Arial, Helvetica, sans-serif;
+  color: #ff4326;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: block;
+  margin-right: 1.4rem;
+  margin-top: 4rem;
+}
+
+.kQlxmu:hover {
+  text-decoration: underline;
+}
+
+<a
+  className="kQlxmu"
+  href="/home"
+  onClick={[Function]}
+/>
+`;
