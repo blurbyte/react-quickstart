@@ -42,7 +42,9 @@
     "moduleDirectories": [
       "node_modules",
       "src"
-    ]
+    ],
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "dependencies": {
     "history": "4.6.1",
