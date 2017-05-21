@@ -2,12 +2,12 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 // components
-import ContentWrapper from '../../components/ContentWrapper';
-import MainHeadline from '../../components/MainHeadline';
-import MainParagraph from '../../components/MainParagraph';
+import ContentWrapper from 'components/ContentWrapper';
+import MainHeadline from 'components/MainHeadline';
+import MainParagraph from 'components/MainParagraph';
 import HomeLink from './HomeLink';
 
-import ManageCounter from '../ManageCounter';
+import ManageCounter from 'containers/ManageCounter'; // eslint-disable-line import/no-named-as-default
 
 const ManageCounterPage = () => (
   <ContentWrapper>
