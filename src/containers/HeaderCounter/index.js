@@ -8,9 +8,9 @@ import { bindActionCreators } from 'redux';
 import Counter from './Counter';
 
 //import actions
-import * as counterActions from '../../actions/counterActions';
+import * as counterActions from 'actions/counterActions';
 
-class HeaderCounter extends React.Component {
+export class HeaderCounter extends React.Component {
   render() {
     const { counter } = this.props;
     return (
