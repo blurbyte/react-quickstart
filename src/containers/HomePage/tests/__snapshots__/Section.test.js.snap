@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppWrapper /> should render correctly 1`] = `
+.ikogIq {
+  border-top: 1px solid #908e89;
+  margin-top: 4rem;
+}
+
+<section
+  className="ikogIq"
+/>
+`;

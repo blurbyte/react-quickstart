@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppWrapper /> should render correctly 1`] = `
+.jgcKYY {
+  width: 66%;
+}
+
+@media (max-width: 1000px) {
+  .jgcKYY {
+    width: 46%;
+  }
+}
+
+@media (max-width: 700px) {
+  .jgcKYY {
+    width: 100%;
+  }
+}
+
+<div
+  className="jgcKYY"
+/>
+`;

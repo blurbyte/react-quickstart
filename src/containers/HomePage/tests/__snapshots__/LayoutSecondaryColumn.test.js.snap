@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppWrapper /> should render correctly 1`] = `
+.iTHqcQ {
+  width: 30%;
+}
+
+@media (max-width: 1000px) {
+  .iTHqcQ {
+    width: 46%;
+  }
+}
+
+@media (max-width: 700px) {
+  .iTHqcQ {
+    width: 100%;
+  }
+}
+
+<div
+  className="iTHqcQ"
+/>
+`;
