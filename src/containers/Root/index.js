@@ -7,8 +7,8 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 
 // main app container and ScrollToTop helper
-import App from '../App';
-import ScrollToTop from '../../components/ScrollToTop';
+import App from 'containers/App';
+import ScrollToTop from 'components/ScrollToTop';
 
 export default class Root extends React.Component {
   render() {
