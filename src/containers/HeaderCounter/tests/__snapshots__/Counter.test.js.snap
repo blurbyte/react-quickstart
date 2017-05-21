@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Counter /> should render correctly 1`] = `
+<Wrapper>
+  <NavLink
+    to="/counter"
+  >
+    Manage example counter
+  </NavLink>
+  <CounterValue>
+    10
+  </CounterValue>
+</Wrapper>
+`;
