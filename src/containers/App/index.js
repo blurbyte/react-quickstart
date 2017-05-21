@@ -4,13 +4,13 @@ import Helmet from 'react-helmet';
 import { Route, Switch } from 'react-router-dom';
 
 //import containers for router
-import HomePage from '../HomePage';
-import ManageCounterPage from '../ManageCounterPage';
-import NotFoundPage from '../NotFoundPage';
+import HomePage from 'containers/HomePage';
+import ManageCounterPage from 'containers/ManageCounterPage';
+import NotFoundPage from 'containers/NotFoundPage';
 
 //components
 import AppWrapper from './AppWrapper';
-import Header from '../../components/Header';
+import Header from 'components/Header';
 
 //top component has to be class in order for hot module replacement to work
 class App extends React.Component {
