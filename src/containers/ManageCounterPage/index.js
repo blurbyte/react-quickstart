@@ -7,7 +7,7 @@ import MainHeadline from 'components/MainHeadline';
 import MainParagraph from 'components/MainParagraph';
 import HomeLink from './HomeLink';
 
-import ManageCounter from 'containers/ManageCounter'; // eslint-disable-line import/no-named-as-default
+import ManageCounter from 'containers/ManageCounter';
 
 const ManageCounterPage = () => (
   <ContentWrapper>
