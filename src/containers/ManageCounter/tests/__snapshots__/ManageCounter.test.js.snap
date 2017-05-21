@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ManageCounter /> should render correctly 1`] = `
+<CounterPanel
+  counter={10}
+  lowerLimit={0}
+  onDecrease={[Function]}
+  onIncrease={[Function]}
+/>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CounterButton /> should render correctly 1`] = `
+<button
+  className="khyxLt"
+  disabled={undefined}
+  onClick={undefined}
+/>
+`;

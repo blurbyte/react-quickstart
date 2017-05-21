@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppWrapper /> should render correctly 1`] = `
+.jEZwaP {
+  font-family: 'OpenSans Light', Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  color: #444;
+  line-height: 3.4rem;
+  margin: 1rem 0;
+}
+
+<p
+  className="jEZwaP"
+/>
+`;

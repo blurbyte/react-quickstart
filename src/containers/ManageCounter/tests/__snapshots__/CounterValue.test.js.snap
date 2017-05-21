@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CounterValue /> should render correctly 1`] = `
+.dzIeSK {
+  padding: 0 0.4rem;
+  border-radius: 6px;
+  font-family: 'OpenSans Bold', Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  margin: 1rem 0;
+  color: #fff;
+  background: #ff4326;
+  display: inline-block;
+  min-width: 6rem;
+  text-align: center;
+}
+
+<p
+  className="dzIeSK"
+>
+  10
+</p>
+`;

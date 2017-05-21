@@ -11,7 +11,7 @@ import CounterPanel from './CounterPanel';
 //import actions
 import * as counterActions from 'actions/counterActions';
 
-class ManageCounter extends React.Component {
+export class ManageCounter extends React.Component {
   //class constructor, not always needed
   constructor(props) {
     super(props);

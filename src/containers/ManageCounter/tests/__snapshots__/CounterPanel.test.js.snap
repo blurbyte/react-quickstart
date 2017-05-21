@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CounterPanel /> should render correct button when counter is higher than lowerLimit 1`] = `
+<Wrapper>
+  <CounterInfo>
+    <Description>
+      Current Counter Value
+    </Description>
+    <CounterValue>
+      10
+    </CounterValue>
+  </CounterInfo>
+  <CounterButton
+    onClick={[Function]}
+  >
+    Increase Value
+  </CounterButton>
+  <CounterButton
+    onClick={[Function]}
+  >
+    Decrease Value 
+  </CounterButton>
+</Wrapper>
+`;
+
+exports[`<CounterPanel /> should render disabled button when counter is lower or equal lowerLimit 1`] = `
+<Wrapper>
+  <CounterInfo>
+    <Description>
+      Current Counter Value
+    </Description>
+    <CounterValue>
+      0
+    </CounterValue>
+  </CounterInfo>
+  <CounterButton
+    onClick={[Function]}
+  >
+    Increase Value
+  </CounterButton>
+  <CounterButton
+    disabled={true}
+  >
+    Decrease Value
+  </CounterButton>
+</Wrapper>
+`;

@@ -1,15 +1,16 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
+import 'jest-styled-components';
 
 import CounterInfo from '../CounterInfo';
 
 describe('<CounterInfo />', () => {
-  it('should render div', () => {
-    const component = shallow(<CounterInfo />);
-    expect(component.type()).toEqual('div');
-  });
-  it('should have a className attribute', () => {
-    const component = shallow(<CounterInfo />);
-    expect(component.prop('className')).toBeDefined();
+  it('should render correctly', () => {
+    // component init
+    const component = renderer.create(
+      <CounterInfo />
+    );
+
+    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
   });
 });

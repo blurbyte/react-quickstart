@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppWrapper /> should render correctly 1`] = `
+.bhBbpZ {
+  display: inline-block;
+  border-top: 1px solid #908e89;
+  margin-top: 3rem;
+}
+
+<div
+  className="bhBbpZ"
+/>
+`;
