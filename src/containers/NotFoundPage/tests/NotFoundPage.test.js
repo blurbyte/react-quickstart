@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 
 import NotFoundPage from '../index';
 
-// mocked components;
+// mocked components
 jest.mock('react-helmet', () => 'Helmet');
 jest.mock('components/ContentWrapper', () => 'ContentWrapper');
 jest.mock('components/MainHeadline', () => 'MainHeadline');
