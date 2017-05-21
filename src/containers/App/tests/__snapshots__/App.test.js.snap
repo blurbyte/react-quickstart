@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render correctly 1`] = `
+<AppWrapper>
+  <Helmet
+    defaultTitle="React Quickstart"
+    titleTemplate="%s | React Quickstart"
+  >
+    <meta
+      content="React starter kit for single page web applications development."
+      name="description"
+    />
+  </Helmet>
+  <Header />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      path="/counter"
+    />
+    <Route
+      component={[Function]}
+    />
+  </Switch>
+</AppWrapper>
+`;
