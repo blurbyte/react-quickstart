@@ -1,21 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NavLink /> should render correctly 1`] = `
-.gmsRav {
+.eUPZrO {
   font-family: 'OpenSans Light', Arial, Helvetica, sans-serif;
   color: #ff4326;
   font-size: 1.4rem;
+  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   display: block;
   margin-right: 1.4rem;
 }
 
-.gmsRav:hover {
+.eUPZrO:hover {
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 <a
-  className="gmsRav"
+  className="sc-bdVaJa eUPZrO"
   href="/counter"
   onClick={[Function]}
 />

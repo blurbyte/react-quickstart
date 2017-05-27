@@ -2,8 +2,6 @@
 
 exports[`<CounterButton /> should render correctly 1`] = `
 <button
-  className="khyxLt"
-  disabled={undefined}
-  onClick={undefined}
+  className="sc-bwzfXH eobOlR"
 />
 `;

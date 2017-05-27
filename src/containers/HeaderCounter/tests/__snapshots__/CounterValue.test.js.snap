@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CounterValue /> should render correctly 1`] = `
-.fSvMUz {
+.jBhCwy {
   padding: 0 0.4rem;
   border-radius: 6px;
   display: block;
@@ -10,6 +10,7 @@ exports[`<CounterValue /> should render correctly 1`] = `
   line-height: 2.5rem;
   background: #ff4326;
   font-family: 'OpenSans Bold', Arial, Helvetica, sans-serif;
+  -webkit-text-align: center;
   text-align: center;
   font-size: 1.8rem;
   color: #fff;
@@ -17,7 +18,7 @@ exports[`<CounterValue /> should render correctly 1`] = `
 }
 
 <span
-  className="fSvMUz"
+  className="sc-bdVaJa jBhCwy"
 >
   10
 </span>

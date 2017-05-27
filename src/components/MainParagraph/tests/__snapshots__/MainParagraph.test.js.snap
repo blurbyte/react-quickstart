@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MainParagraph /> should render correctly 1`] = `
-.cBQnLk {
+.lmNQTu {
   font-family: 'OpenSans Light', Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   color: #444;
@@ -10,6 +10,6 @@ exports[`<MainParagraph /> should render correctly 1`] = `
 }
 
 <p
-  className="cBQnLk"
+  className="sc-bdVaJa lmNQTu"
 />
 `;

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SecondaryHeadline /> should render correctly 1`] = `
-.fgsRWY {
+.ctvJYV {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   color: #444;
@@ -10,6 +10,6 @@ exports[`<SecondaryHeadline /> should render correctly 1`] = `
 }
 
 <h2
-  className="fgsRWY"
+  className="sc-bdVaJa ctvJYV"
 />
 `;

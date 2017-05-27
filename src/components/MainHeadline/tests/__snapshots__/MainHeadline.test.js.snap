@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MainHeadline /> should render correctly 1`] = `
-.ZLWEt {
+.jSBCfo {
   font-family: 'OpenSans Light', Arial, Helvetica, sans-serif;
   font-size: 5rem;
   letter-spacing: -0.2rem;
@@ -13,6 +13,6 @@ exports[`<MainHeadline /> should render correctly 1`] = `
 }
 
 <h1
-  className="ZLWEt"
+  className="sc-bdVaJa jSBCfo"
 />
 `;

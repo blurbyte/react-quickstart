@@ -1,25 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AppWrapper /> should render correctly 1`] = `
-.gyppwW {
+.QIAbW {
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  -webkit-box-pack: space-between;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
 }
 
 @media (max-width: 700px) {
-  .gyppwW {
+  .QIAbW {
     display: block;
   }
 }
 
 <div
-  className="gyppwW"
+  className="sc-bdVaJa QIAbW"
 />
 `;

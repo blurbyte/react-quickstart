@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<HomeLink /> should render correctly 1`] = `
-.ioQfW {
+.kGwcQV {
   height: 4rem;
   border-right: 1px solid #908e89;
   display: inline-block;
@@ -11,7 +11,7 @@ exports[`<HomeLink /> should render correctly 1`] = `
 }
 
 <a
-  className="ioQfW"
+  className="sc-bdVaJa kGwcQV"
   href="/home"
   onClick={[Function]}
 />

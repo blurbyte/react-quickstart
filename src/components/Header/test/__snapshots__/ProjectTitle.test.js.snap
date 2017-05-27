@@ -1,15 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProjectTitle /> should render correctly 1`] = `
-.bhCDUH {
+.fUykab {
   font-family: 'OpenSans Light', Arial, Helvetica, sans-serif;
   color: #908e89;
   font-size: 1.4rem;
+  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   cursor: default;
 }
 
 <p
-  className="bhCDUH"
+  className="sc-bdVaJa fUykab"
 />
 `;
