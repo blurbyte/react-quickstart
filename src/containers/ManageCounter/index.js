@@ -73,7 +73,7 @@ const mapStateToProps = (state) => ({
 });
 
 //selector functions could be used here
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   increaseCounterByAmount: (amount) => dispatch(increaseCounterByAmount(amount)),
   decreaseCounterByAmount: (amount, lowerLimit) => dispatch(decreaseCounterByAmount(amount, lowerLimit))
 });
