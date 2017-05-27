@@ -2,13 +2,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 //import other components, most likely presentational ones
 import Counter from './Counter';
-
-//import actions
-import * as counterActions from 'actions/counterActions';
 
 export class HeaderCounter extends React.Component {
   render() {
@@ -20,18 +16,11 @@ export class HeaderCounter extends React.Component {
 }
 
 HeaderCounter.propTypes = {
-  counter: PropTypes.number.isRequired,
-  actions: PropTypes.object.isRequired
+  counter: PropTypes.number.isRequired
 };
 
-const mapStateToProps = (state) => (
-  {
-    counter: state.counter
-  }
-);
+const mapStateToProps = (state) => ({
+  counter: state.counter
+});
 
-const mapDispatchToProps = (dispatch) => (
-  { actions: bindActionCreators(counterActions, dispatch) }
-);
-
-export default connect(mapStateToProps, mapDispatchToProps)(HeaderCounter);
+export default connect(mapStateToProps)(HeaderCounter);
