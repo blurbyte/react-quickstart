@@ -3,6 +3,7 @@ node_js:
   - 7
   - 6
 install:
+  - yarn install
   - yarn global add codecov
 script:
   - yarn lint
