@@ -1,16 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import A from './A';
+import styled from 'styled-components';
 
-const TextLink = (props) => (
-  <A href={props.href} target="_blank">
-    {props.children}
-  </A>
-);
+const TextLink = styled.a.attrs({
+  target: '_blank'
+})`
+  color: #ff4326;
 
-TextLink.propTypes = {
-  href: PropTypes.string,
-  children: PropTypes.node.isRequired
-};
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 
 export default TextLink;
