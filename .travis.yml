@@ -3,7 +3,7 @@ node_js:
   - 7
   - 6
 install:
-  - yarn global codecov
+  - yarn global add codecov
 script:
   - yarn lint
   - yarn test:coverage
