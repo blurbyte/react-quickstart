@@ -3,13 +3,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 //import other components, most likely presentational ones
 import CounterPanel from './CounterPanel';
 
 //import actions
-import * as counterActions from 'actions/counterActions';
+import { increaseCounterByAmount, decreaseCounterByAmount } from 'actions/counterActions';
 
 export class ManageCounter extends React.Component {
   //class constructor, not always needed
@@ -39,12 +38,12 @@ export class ManageCounter extends React.Component {
 
   onIncrease() {
     //dispatch action creator
-    this.props.actions.increaseCounterByAmount(this.state.counterStep);
+    this.props.increaseCounterByAmount(this.state.counterStep);
   }
 
   onDecrease() {
     const { counterStep, counterLowerLimit } = this.state;
-    this.props.actions.decreaseCounterByAmount(counterStep, counterLowerLimit);
+    this.props.decreaseCounterByAmount(counterStep, counterLowerLimit);
   }
 
   render() {
@@ -63,23 +62,21 @@ export class ManageCounter extends React.Component {
 
 ManageCounter.propTypes = {
   counter: PropTypes.number.isRequired,
-  actions: PropTypes.object.isRequired
+  increaseCounterByAmount: PropTypes.func.isRequired,
+  decreaseCounterByAmount: PropTypes.func.isRequired
 };
 
 //second argument is ownProps: const mapStateToProps = (state, ownProps) => (...);
 //very useful for getting ids passed via url, etc.
-const mapStateToProps = (state) => (
-  {
-    counter: state.counter
-  }
-);
+const mapStateToProps = (state) => ({
+  counter: state.counter
+});
 
-//for multiple actions modules use Object.assign() to combine them
-//for example: Object.assign({}, counterActions, anotherModuleActions)
 //selector functions could be used here
-const mapDispatchToProps = (dispatch) => (
-  { actions: bindActionCreators(counterActions, dispatch) }
-);
+const mapDispatchToProps = (dispatch) => ({
+  increaseCounterByAmount: (amount) => dispatch(increaseCounterByAmount(amount)),
+  decreaseCounterByAmount: (amount, lowerLimit) => dispatch(decreaseCounterByAmount(amount, lowerLimit))
+});
 
 //connecting component with redux store via provider
 export default connect(mapStateToProps, mapDispatchToProps)(ManageCounter);
