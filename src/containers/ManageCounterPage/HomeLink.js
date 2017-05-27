@@ -1,7 +1,6 @@
-import NavLink from '../../components/NavLink';
-import styled from 'styled-components';
+import NavLink from 'components/NavLink';
 
-const HomeLink = styled(NavLink)`
+const HomeLink = NavLink.extend`
   margin-top: 4rem;
 `;
 
