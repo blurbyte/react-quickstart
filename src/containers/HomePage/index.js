@@ -272,7 +272,7 @@ class MainPage extends React.Component {
               </LinksList>
             </Section>
           </LayoutSecondaryColumn>
-      </LayoutWrapper>
+        </LayoutWrapper>
       </ContentWrapper>
     );
   }

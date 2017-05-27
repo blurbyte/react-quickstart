@@ -43,13 +43,13 @@ export class ManageCounter extends React.Component {
   }
 
   onDecrease() {
-    const {counterStep, counterLowerLimit} = this.state;
+    const { counterStep, counterLowerLimit } = this.state;
     this.props.actions.decreaseCounterByAmount(counterStep, counterLowerLimit);
   }
 
   render() {
-    const {counterLowerLimit} = this.state;
-    const {counter} = this.props;
+    const { counterLowerLimit } = this.state;
+    const { counter } = this.props;
     return (
       <CounterPanel
         counter={counter}

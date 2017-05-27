@@ -15,7 +15,7 @@ import Description from './Description';
 import CounterValue from './CounterValue';
 import CounterButton from './CounterButton';
 
-const CounterPanel = ({counter, onIncrease, onDecrease, lowerLimit}) => (
+const CounterPanel = ({ counter, onIncrease, onDecrease, lowerLimit }) => (
   // disable CounterButton if counter value is lower than limit
   <Wrapper>
     <CounterInfo>
@@ -24,8 +24,8 @@ const CounterPanel = ({counter, onIncrease, onDecrease, lowerLimit}) => (
     <CounterButton onClick={onIncrease}>Increase Value</CounterButton>
     {
       counter > lowerLimit ?
-      <CounterButton onClick={onDecrease}>Decrease Value </CounterButton> :
-      <CounterButton disabled>Decrease Value</CounterButton>
+        <CounterButton onClick={onDecrease}>Decrease Value </CounterButton> :
+        <CounterButton disabled>Decrease Value</CounterButton>
     }
   </Wrapper>
 );
