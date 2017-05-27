@@ -1,6 +1,6 @@
 {
   "name": "react-quickstart",
-  "version": "4.0.2",
+  "version": "4.2.0",
   "description": "React starter kit for single page web applications.",
   "scripts": {
     "preremove-demo": "npm run remove-dist",
@@ -13,7 +13,7 @@
     "lint": "esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
     "test": "jest",
-    "test:watch": "npm run test -- --watch",
+    "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "clean-dist": "npm run remove-dist && mkdir dist",
     "remove-dist": "rimraf ./dist",
@@ -44,8 +44,7 @@
       "node_modules",
       "src"
     ],
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
+    "coverageDirectory": "./coverage/"
   },
   "dependencies": {
     "history": "4.6.1",
