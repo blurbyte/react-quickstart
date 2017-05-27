@@ -2,11 +2,10 @@ language: node_js
 node_js:
   - 7
   - 6
-cache: yarn
 install:
-  - yarn install
   - yarn global codecov
 script:
-  - npm run lint
-  - npm run test:coverage
+  - yarn lint
+  - yarn test:coverage
   - codecov
+cache: yarn
