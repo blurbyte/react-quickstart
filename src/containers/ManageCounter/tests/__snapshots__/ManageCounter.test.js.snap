@@ -1,17 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ManageCounter /> should handle increaseCounterByAmount() 1`] = `
-Array [
-  Array [
-    Object {
-      "amount": 10,
-      "type": "INCREASE_COUNTER_BY_AMOUNT",
-    },
-  ],
-]
-`;
-
-exports[`<ManageCounter /> should handle increaseCounterByAmount() 2`] = `
+exports[`<ManageCounter /> should dispatch decreaseCounterByAmount() 1`] = `
 Array [
   Array [
     Object {
@@ -24,6 +13,17 @@ Array [
       "amount": 0,
       "lowerLimit": 0,
       "type": "DECREASE_COUNTER_BY_AMOUNT",
+    },
+  ],
+]
+`;
+
+exports[`<ManageCounter /> should dispatch increaseCounterByAmount() 1`] = `
+Array [
+  Array [
+    Object {
+      "amount": 10,
+      "type": "INCREASE_COUNTER_BY_AMOUNT",
     },
   ],
 ]
