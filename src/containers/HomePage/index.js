@@ -13,7 +13,7 @@ import LayoutSecondaryColumn from './LayoutSecondaryColumn';
 import Section from './Section';
 import LinksList from './LinksList';
 
-class MainPage extends React.Component {
+class HomePage extends React.Component {
 
   // page is static, no need to re-render it
   shouldComponentUpdate() {
@@ -278,4 +278,4 @@ class MainPage extends React.Component {
   }
 }
 
-export default MainPage;
+export default HomePage;

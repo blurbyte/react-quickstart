@@ -18,4 +18,13 @@ describe('<NotFoundPage />', () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+  it('shouldComponentUpdate() should return false', () => {
+    // component init
+    const component = renderer.create(
+      <NotFoundPage />
+    );
+    const instance = component.getInstance();
+
+    expect(instance.shouldComponentUpdate()).toEqual(false);
+  });
 });

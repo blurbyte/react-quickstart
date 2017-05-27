@@ -27,4 +27,13 @@ describe('<HomePage />', () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+  it('shouldComponentUpdate() should return false', () => {
+    // component init
+    const component = renderer.create(
+      <HomePage />
+    );
+    const instance = component.getInstance();
+
+    expect(instance.shouldComponentUpdate()).toEqual(false);
+  });
 });
