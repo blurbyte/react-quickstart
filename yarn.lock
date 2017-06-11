@@ -3564,9 +3564,9 @@ jest-snapshot@^20.0.3:
     natural-compare "^1.4.0"
     pretty-format "^20.0.3"
 
-jest-styled-components@next:
-  version "3.0.0-2"
-  resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-3.0.0-2.tgz#147fd618f3642d0fd7724285bdc08a8b3a91361b"
+jest-styled-components@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-3.0.0.tgz#96dca7780cae9a414aacf8b924382a778813e531"
   dependencies:
     css "^2.2.1"
 
