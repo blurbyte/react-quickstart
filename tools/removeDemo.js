@@ -30,7 +30,7 @@ const filesToCreate = [
   },
   {
     path: './src/styles/globalStyles.js',
-    content: 'import { injectGlobal } from \'styled-components\';\n\ninjectGlobal\`\n\`;'
+    content: 'import { injectGlobal } from \'styled-components\';\n\ninjectGlobal`\n`;'
   },
   {
     path: './src/index.ejs',
