@@ -4,7 +4,7 @@ exports[`<Wrapper /> should render correctly 1`] = `
 .kyIXQx {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
-  display: -ms-flexbox;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;

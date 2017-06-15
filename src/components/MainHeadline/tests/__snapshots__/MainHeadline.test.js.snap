@@ -4,6 +4,9 @@ exports[`<MainHeadline /> should render correctly 1`] = `
 .jSBCfo {
   font-family: 'OpenSans Light', Arial, Helvetica, sans-serif;
   font-size: 5rem;
+  -webkit-letter-spacing: -0.2rem;
+  -moz-letter-spacing: -0.2rem;
+  -ms-letter-spacing: -0.2rem;
   letter-spacing: -0.2rem;
   color: #ff4326;
   border-top: 2px solid #908e89;
