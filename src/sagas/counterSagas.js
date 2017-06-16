@@ -1,6 +1,6 @@
 /* eslint no-constant-condition: ["error", { "checkLoops": false }] */
 import * as types from '../actions/actionTypes';
-import { fork, take, call, put, select } from 'redux-saga/effects';
+import { all, fork, take, call, put, select } from 'redux-saga/effects';
 import { delay } from 'redux-saga';
 
 import { increaseCounterSuccess, decreaseCounterSuccess } from '../actions/counterActions';
@@ -49,8 +49,8 @@ export function* decreaseCounterAsync() {
 }
 
 export default function* counterSagas() {
-  yield [
+  yield all([
     fork(increaseCounterAsync),
     fork(decreaseCounterAsync)
-  ];
+  ]);
 }
