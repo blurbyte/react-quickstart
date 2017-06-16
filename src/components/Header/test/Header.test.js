@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 
 import Header from '../index';
 
-//mocked components
+// mocked components
 jest.mock('../Banner', () => 'Banner');
 jest.mock('../LogoWrapper', () => 'LogoWrapper');
 jest.mock('../HomeLink', () => 'HomeLink');

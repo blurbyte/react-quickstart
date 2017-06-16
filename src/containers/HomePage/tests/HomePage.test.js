@@ -6,7 +6,7 @@ import HomePage from '../index';
 // mocked components
 jest.mock('react-helmet', () => 'Helmet');
 
-//components
+// components
 jest.mock('components/ContentWrapper', () => 'ContentWrapper');
 jest.mock('components/MainHeadline', () => 'MainHeadline');
 jest.mock('components/SecondaryHeadline', () => 'SecondaryHeadline');

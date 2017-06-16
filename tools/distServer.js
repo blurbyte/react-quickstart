@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-//simple express production server
+// simple express production server
 
 import express from 'express';
 import path from 'path';

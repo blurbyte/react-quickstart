@@ -1,4 +1,4 @@
-/*eslint-disable no-console */
+/* eslint-disable no-console */
 import webpack from 'webpack';
 import webpackConfig from '../webpack.config.prod';
 import chalk from 'chalk';

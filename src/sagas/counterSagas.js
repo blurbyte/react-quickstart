@@ -1,4 +1,4 @@
-/*eslint no-constant-condition: ["error", { "checkLoops": false }]*/
+/* eslint no-constant-condition: ["error", { "checkLoops": false }] */
 import * as types from '../actions/actionTypes';
 import { fork, take, call, put, select } from 'redux-saga/effects';
 import { delay } from 'redux-saga';

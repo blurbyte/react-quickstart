@@ -1,6 +1,6 @@
 import * as types from './actionTypes';
 
-//basic counter action creators
+// basic counter action creators
 
 export const increaseCounterByAmount = (amount) => (
   { type: types.INCREASE_COUNTER_BY_AMOUNT, amount }

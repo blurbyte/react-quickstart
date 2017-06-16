@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-//components
+// components
 import ContentWrapper from 'components/ContentWrapper';
 import MainHeadline from 'components/MainHeadline';
 import SecondaryHeadline from 'components/SecondaryHeadline';

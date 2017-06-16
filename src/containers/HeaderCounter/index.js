@@ -1,9 +1,9 @@
-//Container (smart) component
+// Container (smart) component
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-//import other components, most likely presentational ones
+// import other components, most likely presentational ones
 import Counter from './Counter';
 
 export class HeaderCounter extends React.Component {

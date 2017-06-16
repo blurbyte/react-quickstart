@@ -1,4 +1,4 @@
-//vendor libraries reference file
+// vendor libraries reference file
 import 'whatwg-fetch';
 import 'promise-polyfill';
 import 'react';

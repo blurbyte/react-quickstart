@@ -1,8 +1,8 @@
-//presentational component
+// presentational component
 import React from 'react';
 import PropTypes from 'prop-types';
 
-//components
+// components
 import NavLink from 'components/NavLink';
 import Wrapper from './Wrapper';
 import CounterValue from './CounterValue';

@@ -3,16 +3,16 @@ import Helmet from 'react-helmet';
 // Switch is required for NotFoundPage
 import { Route, Switch } from 'react-router-dom';
 
-//import containers for router
+// import containers for router
 import HomePage from 'containers/HomePage';
 import ManageCounterPage from 'containers/ManageCounterPage';
 import NotFoundPage from 'containers/NotFoundPage';
 
-//components
+// components
 import AppWrapper from './AppWrapper';
 import Header from 'components/Header';
 
-//top component has to be class in order for hot module replacement to work
+// top component has to be class in order for hot module replacement to work
 class App extends React.Component {
   render() {
     return (

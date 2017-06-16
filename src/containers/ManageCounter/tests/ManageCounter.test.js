@@ -25,7 +25,7 @@ describe('<ManageCounter />', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
   it('should dispatch increaseCounterByAmount()', () => {
-    //init
+    // init
     const amount = 10;
     actions.increaseCounterByAmount(amount);
 

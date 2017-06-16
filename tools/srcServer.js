@@ -7,7 +7,7 @@ import config from '../webpack.config.dev';
 
 const bundler = webpack(config);
 
-//BrowserSync dev server
+// BrowserSync dev server
 browserSync({
   port: 3000,
   ui: {
