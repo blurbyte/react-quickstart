@@ -47,6 +47,7 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true
     }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false
