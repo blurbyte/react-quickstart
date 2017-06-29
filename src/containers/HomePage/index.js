@@ -39,7 +39,7 @@ class HomePage extends React.Component {
                 <li>Clone the repository <code>git clone https://github.com/blurbyte/react-quickstart.git</code></li>
                 <li>Install <em>React Developer Tools</em> &ndash; provides insight about virtual DOM and components props.</li>
                 <li>Install <em>Redux DevTools</em> &ndash; lets you inspect application state.</li>
-                <li>Install <TextLink href="https://yarnpkg.com/">Yarn</TextLink> &ndash; installing modules super fast (20 seconds instead of 3 minutes with <code>npm install</code>)</li>
+                <li>Install <TextLink href="https://yarnpkg.com/">Yarn</TextLink> &ndash; installing modules super fast</li>
                 <li>Enter project folder and install all required modules with simple <code>yarn</code> command.</li>
                 <li>Start demo Redux aplication <code>npm start -s</code>. It will build a project, start webserver up and open app in your browser. It also automaticly lint code and run tests each time you save. Webpack serves all files from memory, no physical files are created.</li>
                 <li>Take some time and review <em>example counter</em> application code. All project files are placed under <b>/src</b> folder.</li>
