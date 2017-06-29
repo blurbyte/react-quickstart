@@ -11,7 +11,7 @@ exports[`<HomePage /> should render correctly 1`] = `
     Welcome to React Quickstart
   </MainHeadline>
   <MainParagraph>
-    React Quickstart is starting kit for creating fast and responsive web applications with React. It takes care of initial developement environment setup, boilerplating and puts everything to use in simple example. Notable technologies used are: React, Redux, React Router, Babel, Webpack2, ESLint.
+    React Quickstart is starting kit for creating fast and responsive web applications with React. It takes care of initial developement environment setup, boilerplating and puts everything to use in simple example. Notable technologies used are: React, Redux, React Router v4, Babel, Webpack v3, ESLint.
   </MainParagraph>
   <LayoutWrapper>
     <LayoutMainColumn>
@@ -68,11 +68,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               Yarn
             </TextLink>
-             – installing modules super fast (20 seconds instead of 3 minutes with 
-            <code>
-              npm install
-            </code>
-            )
+             – installing modules super fast
           </li>
           <li>
             Enter project folder and install all required modules with simple 
