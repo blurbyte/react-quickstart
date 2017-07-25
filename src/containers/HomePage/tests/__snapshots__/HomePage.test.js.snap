@@ -42,7 +42,8 @@ exports[`<HomePage /> should render correctly 1`] = `
             .
           </li>
           <li>
-            Clone the repository 
+            Clone the repository
+             
             <code>
               git clone https://github.com/blurbyte/react-quickstart.git
             </code>
@@ -68,7 +69,8 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               Yarn
             </TextLink>
-             – installing modules super fast
+             
+            – installing modules super fast
           </li>
           <li>
             Enter project folder and install all required modules with simple 
@@ -710,7 +712,8 @@ exports[`<HomePage /> should render correctly 1`] = `
         </SecondaryHeadline>
         <LinksList>
           <li>
-            Check my other projects on 
+            Check my other projects on
+             
             <TextLink
               href="https://github.com/blurbyte"
             >
@@ -718,7 +721,8 @@ exports[`<HomePage /> should render correctly 1`] = `
             </TextLink>
           </li>
           <li>
-            Contact me on 
+            Contact me on
+             
             <TextLink
               href="https://twitter.com/blurbyte"
             >
@@ -726,7 +730,8 @@ exports[`<HomePage /> should render correctly 1`] = `
             </TextLink>
           </li>
           <li>
-            Visit 
+            Visit
+             
             <TextLink
               href="http://blurbyte.com/"
             >
