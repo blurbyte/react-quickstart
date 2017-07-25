@@ -31,7 +31,7 @@ class HomePage extends React.Component {
           applications with React. It takes care of initial developement
           environment setup, boilerplating and puts everything to use in simple
           example. Notable technologies used are: React, Redux, React Router v4,
-          Babel, Webpack v3, ESLint.
+          Babel, Webpack v3, ESLint, styled-components. Formatted with prettier.
         </MainParagraph>
         <LayoutWrapper>
           <LayoutMainColumn>
