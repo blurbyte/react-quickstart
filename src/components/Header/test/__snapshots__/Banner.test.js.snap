@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Banner /> should render correctly 1`] = `
-.iqopyf {
+.c0 {
   position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
@@ -26,6 +26,6 @@ exports[`<Banner /> should render correctly 1`] = `
 }
 
 <header
-  className="sc-bdVaJa iqopyf"
+  className="c0"
 />
 `;

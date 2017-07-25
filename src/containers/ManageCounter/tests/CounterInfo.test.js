@@ -11,6 +11,6 @@ describe('<CounterInfo />', () => {
       <CounterInfo />
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

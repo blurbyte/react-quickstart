@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AppWrapper /> should render correctly 1`] = `
-.bmjjdU {
+.c0 {
   min-width: 100%;
   min-height: 100%;
 }
 
 <div
-  className="sc-bdVaJa bmjjdU"
+  className="c0"
 />
 `;

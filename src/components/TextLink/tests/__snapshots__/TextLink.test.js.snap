@@ -1,17 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TextLink /> should render correctly 1`] = `
-.fNwZcQ {
+.c0 {
   color: #ff4326;
 }
 
-.fNwZcQ:hover {
-  -webkit-text-decoration: underline;
+.c0:hover {
   text-decoration: underline;
 }
 
 <a
-  className="sc-bdVaJa fNwZcQ"
+  className="c0"
   href="https://google.com"
   target="_blank"
 >

@@ -11,6 +11,6 @@ describe('<ProjectTitle />', () => {
       <ProjectTitle />
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

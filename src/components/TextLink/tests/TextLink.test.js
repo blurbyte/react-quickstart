@@ -16,6 +16,6 @@ describe('<TextLink />', () => {
       <TextLink {...props}>Google.com</TextLink>
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

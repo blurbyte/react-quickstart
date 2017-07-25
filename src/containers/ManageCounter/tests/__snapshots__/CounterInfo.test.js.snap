@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CounterInfo /> should render correctly 1`] = `
-.hPftyW {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13,6 +13,6 @@ exports[`<CounterInfo /> should render correctly 1`] = `
 }
 
 <div
-  className="sc-bdVaJa hPftyW"
+  className="c0"
 />
 `;

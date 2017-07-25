@@ -11,6 +11,6 @@ describe('<AppWrapper />', () => {
       <LayoutSecondaryColumn />
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

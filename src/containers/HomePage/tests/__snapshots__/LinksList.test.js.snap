@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AppWrapper /> should render correctly 1`] = `
-.liwBFP {
+.c0 {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
 
 <ul
-  className="sc-bdVaJa liwBFP"
+  className="c0"
 />
 `;

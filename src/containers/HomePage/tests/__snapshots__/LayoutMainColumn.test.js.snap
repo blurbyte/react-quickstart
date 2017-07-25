@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AppWrapper /> should render correctly 1`] = `
-.iDDaQo {
+.c0 {
   width: 66%;
 }
 
-@media (max-width: 1000px) {
-  .iDDaQo {
+@media (max-width:1000px) {
+  .c0 {
     width: 46%;
   }
 }
 
-@media (max-width: 700px) {
-  .iDDaQo {
+@media (max-width:700px) {
+  .c0 {
     width: 100%;
   }
 }
 
 <div
-  className="sc-bdVaJa iDDaQo"
+  className="c0"
 />
 `;

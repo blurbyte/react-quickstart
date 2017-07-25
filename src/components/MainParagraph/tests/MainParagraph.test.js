@@ -11,6 +11,6 @@ describe('<MainParagraph />', () => {
       <MainParagraph />
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

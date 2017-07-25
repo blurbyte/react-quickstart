@@ -11,6 +11,6 @@ describe('<AppWrapper />', () => {
       <Description />
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

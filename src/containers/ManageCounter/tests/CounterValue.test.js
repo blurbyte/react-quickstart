@@ -11,6 +11,6 @@ describe('<CounterValue />', () => {
       <CounterValue>10</CounterValue>
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

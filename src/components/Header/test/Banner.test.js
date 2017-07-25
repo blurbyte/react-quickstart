@@ -11,6 +11,6 @@ describe('<Banner />', () => {
       <Banner />
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

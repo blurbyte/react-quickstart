@@ -11,6 +11,6 @@ describe('<MainHeadline />', () => {
       <MainHeadline />
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

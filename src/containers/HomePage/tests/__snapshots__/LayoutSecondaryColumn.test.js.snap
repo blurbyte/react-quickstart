@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AppWrapper /> should render correctly 1`] = `
-.LtYWa {
+.c0 {
   width: 30%;
 }
 
-@media (max-width: 1000px) {
-  .LtYWa {
+@media (max-width:1000px) {
+  .c0 {
     width: 46%;
   }
 }
 
-@media (max-width: 700px) {
-  .LtYWa {
+@media (max-width:700px) {
+  .c0 {
     width: 100%;
   }
 }
 
 <div
-  className="sc-bdVaJa LtYWa"
+  className="c0"
 />
 `;

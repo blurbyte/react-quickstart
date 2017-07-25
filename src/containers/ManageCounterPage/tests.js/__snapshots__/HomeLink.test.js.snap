@@ -1,24 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<HomeLink /> should render correctly 1`] = `
-.bWmerV {
-  font-family: 'OpenSans Light', Arial, Helvetica, sans-serif;
+.c0 {
+  font-family: 'OpenSans Light',Arial,Helvetica,sans-serif;
   color: #ff4326;
   font-size: 1.4rem;
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   display: block;
   margin-right: 1.4rem;
   margin-top: 4rem;
 }
 
-.bWmerV:hover {
-  -webkit-text-decoration: underline;
+.c0:hover {
   text-decoration: underline;
 }
 
 <a
-  className="sc-bwzfXH bWmerV"
+  className="c0"
   href="/home"
   onClick={[Function]}
 />

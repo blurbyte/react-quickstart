@@ -11,6 +11,6 @@ describe('<AppWrapper />', () => {
       <LinksList />
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

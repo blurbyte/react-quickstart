@@ -18,6 +18,6 @@ describe('<NavLink />', () => {
       </MemoryRouter>
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

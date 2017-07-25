@@ -11,6 +11,6 @@ describe('<AppWrapper />', () => {
       <LayoutMainColumn />
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

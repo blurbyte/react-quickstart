@@ -11,6 +11,6 @@ describe('<ContentWrapper />', () => {
       <ContentWrapper />
     );
 
-    expect(component.toJSON()).toMatchStyledComponentsSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

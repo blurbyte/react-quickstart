@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MainHeadline /> should render correctly 1`] = `
-.jSBCfo {
-  font-family: 'OpenSans Light', Arial, Helvetica, sans-serif;
+.c0 {
+  font-family: 'OpenSans Light',Arial,Helvetica,sans-serif;
   font-size: 5rem;
   -webkit-letter-spacing: -0.2rem;
   -moz-letter-spacing: -0.2rem;
@@ -16,6 +16,6 @@ exports[`<MainHeadline /> should render correctly 1`] = `
 }
 
 <h1
-  className="sc-bdVaJa jSBCfo"
+  className="c0"
 />
 `;

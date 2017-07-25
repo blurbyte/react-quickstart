@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AppWrapper /> should render correctly 1`] = `
-.QIAbW {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12,13 +12,13 @@ exports[`<AppWrapper /> should render correctly 1`] = `
   justify-content: space-between;
 }
 
-@media (max-width: 700px) {
-  .QIAbW {
+@media (max-width:700px) {
+  .c0 {
     display: block;
   }
 }
 
 <div
-  className="sc-bdVaJa QIAbW"
+  className="c0"
 />
 `;

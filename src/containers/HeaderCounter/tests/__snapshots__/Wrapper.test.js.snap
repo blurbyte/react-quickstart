@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Wrapper /> should render correctly 1`] = `
-.kyIXQx {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -13,6 +13,6 @@ exports[`<Wrapper /> should render correctly 1`] = `
 }
 
 <div
-  className="sc-bdVaJa kyIXQx"
+  className="c0"
 />
 `;
