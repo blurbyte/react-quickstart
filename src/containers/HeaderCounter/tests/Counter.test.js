@@ -16,9 +16,7 @@ describe('<Counter />', () => {
     };
 
     // component init
-    const component = renderer.create(
-      <Counter {...props} />
-    );
+    const component = renderer.create(<Counter {...props} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

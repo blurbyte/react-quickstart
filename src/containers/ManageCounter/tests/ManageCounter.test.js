@@ -18,9 +18,7 @@ describe('<ManageCounter />', () => {
       decreaseCounterByAmount: jest.fn()
     };
     // component init
-    const component = renderer.create(
-      <ManageCounter {...props} />
-    );
+    const component = renderer.create(<ManageCounter {...props} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
@@ -46,9 +44,7 @@ describe('<ManageCounter />', () => {
       decreaseCounterByAmount: jest.fn()
     };
     // component init
-    const component = renderer.create(
-      <ManageCounter {...props} />
-    );
+    const component = renderer.create(<ManageCounter {...props} />);
     const instance = component.getInstance();
     instance.onIncrease();
 
@@ -62,9 +58,7 @@ describe('<ManageCounter />', () => {
       decreaseCounterByAmount: jest.fn()
     };
     // component init
-    const component = renderer.create(
-      <ManageCounter {...props} />
-    );
+    const component = renderer.create(<ManageCounter {...props} />);
     const instance = component.getInstance();
     instance.onDecrease();
 

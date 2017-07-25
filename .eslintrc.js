@@ -73,7 +73,7 @@ module.exports = {
     "import/extensions": 1,
     "react/self-closing-comp": 0,
     "react/sort-comp": 1,
-    "react/jsx-wrap-multilines": 1,
+    "react/jsx-wrap-multilines": 0,
     "jsx-a11y/aria-props": 2,
     "jsx-a11y/heading-has-content": 0,
     "jsx-a11y/href-no-hash": 2,

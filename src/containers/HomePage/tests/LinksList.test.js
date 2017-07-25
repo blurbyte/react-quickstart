@@ -7,9 +7,7 @@ import LinksList from '../LinksList';
 describe('<AppWrapper />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <LinksList />
-    );
+    const component = renderer.create(<LinksList />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

@@ -15,12 +15,13 @@ export const history = createHistory();
 const reactRouterMiddleware = routerMiddleware(history);
 
 function configureStoreProd(initialState) {
-  const middlewares = [
-    sagaMiddleware,
-    reactRouterMiddleware
-  ];
+  const middlewares = [sagaMiddleware, reactRouterMiddleware];
 
-  const prodStore = createStore(rootReducer, initialState, compose(applyMiddleware(...middlewares)));
+  const prodStore = createStore(
+    rootReducer,
+    initialState,
+    compose(applyMiddleware(...middlewares))
+  );
 
   sagaMiddleware.run(rootSaga);
 
@@ -36,7 +37,11 @@ function configureStoreDev(initialState) {
 
   const enhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-  const devStore = createStore(rootReducer, initialState, enhancers(applyMiddleware(...middlewares)));
+  const devStore = createStore(
+    rootReducer,
+    initialState,
+    enhancers(applyMiddleware(...middlewares))
+  );
 
   // enable hot module replacement for reducers
   if (module.hot) {
@@ -51,6 +56,9 @@ function configureStoreDev(initialState) {
   return devStore;
 }
 
-const store = process.env.NODE_ENV === 'production' ? configureStoreProd : configureStoreDev;
+const store =
+  process.env.NODE_ENV === 'production'
+    ? configureStoreProd
+    : configureStoreDev;
 
 export default store;

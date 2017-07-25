@@ -17,8 +17,14 @@ class App extends React.Component {
   render() {
     return (
       <AppWrapper>
-        <Helmet titleTemplate="%s | React Quickstart" defaultTitle="React Quickstart">
-          <meta name="description" content="React starter kit for single page web applications development." />
+        <Helmet
+          titleTemplate="%s | React Quickstart"
+          defaultTitle="React Quickstart"
+        >
+          <meta
+            name="description"
+            content="React starter kit for single page web applications development."
+          />
         </Helmet>
         <Header />
         <Switch>

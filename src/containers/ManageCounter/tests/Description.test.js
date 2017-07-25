@@ -7,9 +7,7 @@ import Description from '../Description';
 describe('<AppWrapper />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <Description />
-    );
+    const component = renderer.create(<Description />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

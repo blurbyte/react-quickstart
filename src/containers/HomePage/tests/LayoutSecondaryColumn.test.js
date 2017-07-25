@@ -7,9 +7,7 @@ import LayoutSecondaryColumn from '../LayoutSecondaryColumn';
 describe('<AppWrapper />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <LayoutSecondaryColumn />
-    );
+    const component = renderer.create(<LayoutSecondaryColumn />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

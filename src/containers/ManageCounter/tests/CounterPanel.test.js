@@ -20,9 +20,7 @@ describe('<CounterPanel />', () => {
       lowerLimit: 0
     };
     // component init
-    const component = renderer.create(
-      <CounterPanel {...props} />
-    );
+    const component = renderer.create(<CounterPanel {...props} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
@@ -35,9 +33,7 @@ describe('<CounterPanel />', () => {
       lowerLimit: 0
     };
     // component init
-    const component = renderer.create(
-      <CounterPanel {...props} />
-    );
+    const component = renderer.create(<CounterPanel {...props} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

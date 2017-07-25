@@ -3,7 +3,10 @@ import * as types from '../actions/actionTypes';
 import { all, fork, take, call, put, select } from 'redux-saga/effects';
 import { delay } from 'redux-saga';
 
-import { increaseCounterSuccess, decreaseCounterSuccess } from '../actions/counterActions';
+import {
+  increaseCounterSuccess,
+  decreaseCounterSuccess
+} from '../actions/counterActions';
 
 // Although it is not the most realistic example for sure
 // it shows a few COOL things you could do with redux-saga
@@ -12,7 +15,6 @@ import { increaseCounterSuccess, decreaseCounterSuccess } from '../actions/count
 
 export function* increaseCounterAsync() {
   for (let i = 0; true; i++) {
-
     // waits for INCREASE_COUNTER_BY_AMOUNT action to be dispatched
     const { amount } = yield take(types.INCREASE_COUNTER_BY_AMOUNT);
 
@@ -27,11 +29,10 @@ export function* increaseCounterAsync() {
 
 // decreases counter with 100ms delay
 
-export const counterValueFromState = (state) => state.counter;
+export const counterValueFromState = state => state.counter;
 
 export function* decreaseCounterAsync() {
   while (true) {
-
     // waits for DECREASE_COUNTER_BY_AMOUNT action to be dispatched
     const { amount, lowerLimit } = yield take(types.DECREASE_COUNTER_BY_AMOUNT);
 
@@ -49,8 +50,5 @@ export function* decreaseCounterAsync() {
 }
 
 export default function* counterSagas() {
-  yield all([
-    fork(increaseCounterAsync),
-    fork(decreaseCounterAsync)
-  ]);
+  yield all([fork(increaseCounterAsync), fork(decreaseCounterAsync)]);
 }

@@ -7,9 +7,7 @@ import Banner from '../Banner';
 describe('<Banner />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <Banner />
-    );
+    const component = renderer.create(<Banner />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

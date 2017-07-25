@@ -13,9 +13,7 @@ jest.mock('components/Header', () => 'Header');
 describe('<App />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <App />
-    );
+    const component = renderer.create(<App />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

@@ -7,9 +7,7 @@ import SecondaryHeadline from '../index';
 describe('<SecondaryHeadline />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <SecondaryHeadline />
-    );
+    const component = renderer.create(<SecondaryHeadline />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

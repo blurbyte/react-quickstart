@@ -17,9 +17,7 @@ describe('<Root />', () => {
     const store = createStore(rootReducer);
 
     // component init
-    const component = renderer.create(
-      <Root store={store} history={history} />
-    );
+    const component = renderer.create(<Root store={store} history={history} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

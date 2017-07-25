@@ -7,9 +7,7 @@ import ContentWrapper from '../index';
 describe('<ContentWrapper />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <ContentWrapper />
-    );
+    const component = renderer.create(<ContentWrapper />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

@@ -7,9 +7,7 @@ import LogoWrapper from '../LogoWrapper';
 describe('<LogoWrapper />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <LogoWrapper />
-    );
+    const component = renderer.create(<LogoWrapper />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

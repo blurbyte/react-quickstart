@@ -8,7 +8,10 @@ import { connect } from 'react-redux';
 import CounterPanel from './CounterPanel';
 
 // import actions
-import { increaseCounterByAmount, decreaseCounterByAmount } from 'actions/counterActions';
+import {
+  increaseCounterByAmount,
+  decreaseCounterByAmount
+} from 'actions/counterActions';
 
 export class ManageCounter extends React.Component {
   // class constructor, not always needed
@@ -68,14 +71,15 @@ ManageCounter.propTypes = {
 
 // second argument is ownProps: const mapStateToProps = (state, ownProps) => (...);
 // very useful for getting ids passed via url, etc.
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   counter: state.counter
 });
 
 // selector functions could be used here
-export const mapDispatchToProps = (dispatch) => ({
-  increaseCounterByAmount: (amount) => dispatch(increaseCounterByAmount(amount)),
-  decreaseCounterByAmount: (amount, lowerLimit) => dispatch(decreaseCounterByAmount(amount, lowerLimit))
+export const mapDispatchToProps = dispatch => ({
+  increaseCounterByAmount: amount => dispatch(increaseCounterByAmount(amount)),
+  decreaseCounterByAmount: (amount, lowerLimit) =>
+    dispatch(decreaseCounterByAmount(amount, lowerLimit))
 });
 
 // connecting component with redux store via provider

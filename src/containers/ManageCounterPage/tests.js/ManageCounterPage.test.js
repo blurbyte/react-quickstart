@@ -14,9 +14,7 @@ jest.mock('containers/ManageCounter', () => 'ManageCounter');
 describe('<ManageCounterPage />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <ManageCounterPage />
-    );
+    const component = renderer.create(<ManageCounterPage />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

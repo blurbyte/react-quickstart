@@ -9,9 +9,7 @@ import Counter from './Counter';
 export class HeaderCounter extends React.Component {
   render() {
     const { counter } = this.props;
-    return (
-      <Counter counter={counter} />
-    );
+    return <Counter counter={counter} />;
   }
 }
 
@@ -19,7 +17,7 @@ HeaderCounter.propTypes = {
   counter: PropTypes.number.isRequired
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   counter: state.counter
 });
 

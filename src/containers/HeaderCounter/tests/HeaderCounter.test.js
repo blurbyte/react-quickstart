@@ -15,9 +15,7 @@ describe('<HeaderCounter />', () => {
     };
 
     // component init
-    const component = renderer.create(
-      <HeaderCounter {...props} />
-    );
+    const component = renderer.create(<HeaderCounter {...props} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

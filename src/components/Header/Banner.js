@@ -11,7 +11,7 @@ const Banner = styled.header`
   width: 100%;
   border-bottom: 1px solid #908e89;
   height: 6.4rem;
-  box-shadow: 0 4px 4px -1px rgba(40,40,40,0.1);
+  box-shadow: 0 4px 4px -1px rgba(40, 40, 40, 0.1);
   background: #fff;
 `;
 

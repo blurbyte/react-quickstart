@@ -7,9 +7,7 @@ import Button from '../index';
 describe('<Button />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <Button />
-    );
+    const component = renderer.create(<Button />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

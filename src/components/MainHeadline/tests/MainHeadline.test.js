@@ -7,9 +7,7 @@ import MainHeadline from '../index';
 describe('<MainHeadline />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <MainHeadline />
-    );
+    const component = renderer.create(<MainHeadline />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

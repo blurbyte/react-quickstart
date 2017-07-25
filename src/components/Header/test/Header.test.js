@@ -14,9 +14,7 @@ jest.mock('containers/HeaderCounter', () => 'HeaderCounter');
 describe('<Header />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <Header />
-    );
+    const component = renderer.create(<Header />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

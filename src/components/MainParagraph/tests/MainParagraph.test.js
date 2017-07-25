@@ -7,9 +7,7 @@ import MainParagraph from '../index';
 describe('<MainParagraph />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <MainParagraph />
-    );
+    const component = renderer.create(<MainParagraph />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

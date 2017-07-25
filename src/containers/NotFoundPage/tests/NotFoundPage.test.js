@@ -12,17 +12,13 @@ jest.mock('components/NavLink', () => 'NavLink');
 describe('<NotFoundPage />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <NotFoundPage />
-    );
+    const component = renderer.create(<NotFoundPage />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
   it('shouldComponentUpdate() should return false', () => {
     // component init
-    const component = renderer.create(
-      <NotFoundPage />
-    );
+    const component = renderer.create(<NotFoundPage />);
     const instance = component.getInstance();
 
     expect(instance.shouldComponentUpdate()).toEqual(false);

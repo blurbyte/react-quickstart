@@ -7,9 +7,7 @@ import LayoutMainColumn from '../LayoutMainColumn';
 describe('<AppWrapper />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <LayoutMainColumn />
-    );
+    const component = renderer.create(<LayoutMainColumn />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

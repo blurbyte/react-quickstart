@@ -7,9 +7,7 @@ import ProjectTitle from '../ProjectTitle';
 describe('<ProjectTitle />', () => {
   it('should render correctly', () => {
     // component init
-    const component = renderer.create(
-      <ProjectTitle />
-    );
+    const component = renderer.create(<ProjectTitle />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

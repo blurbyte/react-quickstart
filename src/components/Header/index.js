@@ -10,14 +10,15 @@ import Logo from 'components/Icons/Logo';
 // container
 import HeaderCounter from 'containers/HeaderCounter';
 
-const Header = () => (
+const Header = () =>
   <Banner>
     <LogoWrapper>
-      <HomeLink to="/"><Logo /></HomeLink>
+      <HomeLink to="/">
+        <Logo />
+      </HomeLink>
       <ProjectTitle>React Quickstart</ProjectTitle>
     </LogoWrapper>
     <HeaderCounter />
-  </Banner>
-);
+  </Banner>;
 
 export default Header;
