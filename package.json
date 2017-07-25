@@ -18,8 +18,7 @@
     "clean-dist": "npm run remove-dist && mkdir dist",
     "remove-dist": "rimraf ./dist",
     "prebuild": "npm-run-all clean-dist test lint",
-    "build": "babel-node tools/build.js && npm run open:dist",
-    "prettier": "prettier --single-quote --list-different --write \"src/**/*.js\""
+    "build": "babel-node tools/build.js && npm run open:dist"
   },
   "repository": {
     "type": "git",

@@ -34,8 +34,6 @@ browserSync({
       webpackHotMiddleware(bundler)
     ]
   },
-  files: [
-    'src/*.html'
-  ],
+  files: ['src/*.html'],
   notify: false
 });

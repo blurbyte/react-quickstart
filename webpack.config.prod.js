@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: [
     new webpack.ProvidePlugin({
-      fetch: 'exports-loader?self.fetch!whatwg-fetch',
+      fetch: 'exports-loader?self.fetch!whatwg-fetch'
     }),
     new WebpackMd5Hash(),
     new webpack.optimize.CommonsChunkPlugin({
@@ -64,9 +64,25 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.(jpe?g|png|gif)$/i, loader: 'file-loader', options: { name: 'assets/[name].[ext]' } },
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader', options: { limit: 10000, mimetype: 'application/font-woff', name: 'assets/[name].[ext]' } },
-      { test: /\.ico$/, loader: 'file-loader', options: { name: '[name].[ext]' } },
+      {
+        test: /\.(jpe?g|png|gif)$/i,
+        loader: 'file-loader',
+        options: { name: 'assets/[name].[ext]' }
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          mimetype: 'application/font-woff',
+          name: 'assets/[name].[ext]'
+        }
+      },
+      {
+        test: /\.ico$/,
+        loader: 'file-loader',
+        options: { name: '[name].[ext]' }
+      },
       { test: /(\.css)$/, use: ['style-loader', 'css-loader'] }
     ]
   }
