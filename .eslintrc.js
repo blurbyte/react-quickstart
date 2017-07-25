@@ -5,11 +5,13 @@ module.exports = {
   "extends": [
     "eslint:recommended",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "prettier"
   ],
   "plugins": [
     "react",
-    "jsx-a11y"
+    "jsx-a11y",
+    "prettier"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
@@ -41,8 +43,8 @@ module.exports = {
     "jsx-quotes": 1,
     "import/no-unresolved": 2,
     "import/no-named-as-default": 0,
-    "react/display-name": [ 1, {"ignoreTranspilerName": false }],
-    "react/forbid-prop-types": [1, {"forbid": ["any"]}],
+    "react/display-name": [1, { "ignoreTranspilerName": false }],
+    "react/forbid-prop-types": [1, { "forbid": ["any"] }],
     "react/jsx-boolean-value": 0,
     "react/jsx-closing-bracket-location": 0,
     "react/jsx-curly-spacing": 1,
@@ -78,7 +80,8 @@ module.exports = {
     "jsx-a11y/label-has-for": 2,
     "jsx-a11y/mouse-events-have-key-events": 2,
     "jsx-a11y/role-has-required-aria-props": 2,
-    "jsx-a11y/role-supports-aria-props": 2
+    "jsx-a11y/role-supports-aria-props": 2,
+    "prettier/prettier": [2, { "singleQuote": true }]
   },
   "settings": {
     "import/resolver": {
