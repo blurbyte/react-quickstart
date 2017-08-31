@@ -10,7 +10,7 @@ import Logo from 'components/Icons/Logo';
 // container
 import HeaderCounter from 'containers/HeaderCounter';
 
-const Header = () =>
+const Header = () => (
   <Banner>
     <LogoWrapper>
       <HomeLink to="/">
@@ -19,6 +19,7 @@ const Header = () =>
       <ProjectTitle>React Quickstart</ProjectTitle>
     </LogoWrapper>
     <HeaderCounter />
-  </Banner>;
+  </Banner>
+);
 
 export default Header;

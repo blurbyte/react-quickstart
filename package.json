@@ -31,7 +31,7 @@
     "react-router",
     "quickstart",
     "jest",
-    "webpack2",
+    "webpack3",
     "redux-saga"
   ],
   "author": "blurbyte",
@@ -104,7 +104,7 @@
     "npm-run-all": "4.0.1",
     "offline-plugin": "4.8.1",
     "open": "0.0.5",
-    "prettier": "1.5.3",
+    "prettier": "1.6.1",
     "prop-types": "15.5.10",
     "react-hot-loader": "3.0.0-beta.6",
     "react-test-renderer": "15.6.1",

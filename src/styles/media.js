@@ -9,7 +9,7 @@ const sizes = {
 const media = Object.keys(sizes).reduce((accumulator, label) => {
   accumulator[label] = (...args) => css`
     @media (max-width: ${sizes[label]}px) {
-      ${css(...args)}
+      ${css(...args)};
     }
   `;
 

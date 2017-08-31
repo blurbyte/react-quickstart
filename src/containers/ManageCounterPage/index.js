@@ -9,7 +9,7 @@ import HomeLink from './HomeLink';
 
 import ManageCounter from 'containers/ManageCounter';
 
-const ManageCounterPage = () =>
+const ManageCounterPage = () => (
   <ContentWrapper>
     <Helmet>
       <title>Manage Counter</title>
@@ -23,6 +23,7 @@ const ManageCounterPage = () =>
     </MainParagraph>
     <ManageCounter />
     <HomeLink to="/">Go back to main page</HomeLink>
-  </ContentWrapper>;
+  </ContentWrapper>
+);
 
 export default ManageCounterPage;

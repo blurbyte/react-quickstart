@@ -15,20 +15,21 @@ import Description from './Description';
 import CounterValue from './CounterValue';
 import CounterButton from './CounterButton';
 
-const CounterPanel = ({ counter, onIncrease, onDecrease, lowerLimit }) =>
+const CounterPanel = ({ counter, onIncrease, onDecrease, lowerLimit }) => (
   // disable CounterButton if counter value is lower than limit
   <Wrapper>
     <CounterInfo>
       <Description>Current Counter Value</Description>
-      <CounterValue>
-        {counter}
-      </CounterValue>
+      <CounterValue>{counter}</CounterValue>
     </CounterInfo>
     <CounterButton onClick={onIncrease}>Increase Value</CounterButton>
-    {counter > lowerLimit
-      ? <CounterButton onClick={onDecrease}>Decrease Value </CounterButton>
-      : <CounterButton disabled>Decrease Value</CounterButton>}
-  </Wrapper>;
+    {counter > lowerLimit ? (
+      <CounterButton onClick={onDecrease}>Decrease Value </CounterButton>
+    ) : (
+      <CounterButton disabled>Decrease Value</CounterButton>
+    )}
+  </Wrapper>
+);
 
 // list of react PropTypes: https://facebook.github.io/react/docs/typechecking-with-proptypes.html
 // you can pass strings, numbers, objects, arrays, etc.
